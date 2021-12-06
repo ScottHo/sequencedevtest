@@ -1,0 +1,35 @@
+# intellij
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# eclipse
+.settings/
+.classpath
+.project
+
+# netbeans
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# maven
+target/
+export/
+
+# kdiff3
+*.orig
+
+# windows
+Thumbs.db
+
+# mac
+.DS_Store
+
+# seqdev
+Data/
