@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <sequenceIO>
-    <sequence dummyScanKey="param27" acqTimeModeKey="param184" gradRotPhiKey="param28" gradRotThetaKey="param29" gradRotPsiKey="param30">
+    <sequence rxGainTableKey="table1" ifFreqKey="param1" accuDimKey="param7" extTrigModeKey="param11" extTrigSourceKey="param10" dummyScanKey="param27" preScanKey="param8" firCoefSelectedKey="param9" updateDimensionKey="param12" acqTimeModeKey="param184" gradRotPhiKey="param28" gradRotThetaKey="param29" gradRotPsiKey="param30">
         <acquChannel swKey="param42" nameKey="param41">
             <keyList></keyList>
             <keyList></keyList>
@@ -58,7 +58,7 @@
             <keyList>elem32</keyList>
             <keyList>elem37</keyList>
         </timeChannel>
-        <ttlChannels nameKey="param46" defaultElementKey="elem4">
+        <ttlChannels ttlIDKey="param13" nameKey="param46" defaultElementKey="elem4">
             <keyList>elem11</keyList>
             <keyList>elem16</keyList>
             <keyList>elem21</keyList>
@@ -76,17 +76,19 @@
             <keyList>elem33</keyList>
             <keyList>elem38</keyList>
         </blankingChannels>
-        <txChannels baseFreqKey="param36" levelKey="param37" nameKey="param35">
+        <txChannels baseFreqKey="param36" levelKey="param37" nucleusKey="param0" nameKey="param35">
             <keyList></keyList>
+            <keyList>elem59</keyList>
             <keyList></keyList>
-            <keyList>elem42</keyList>
-            <keyList></keyList>
+            <keyList>elem61</keyList>
             <keyList></keyList>
             <keyList></keyList>
             <keyList></keyList>
         </txChannels>
-        <pulses/>
-        <observedTxIndex>-1</observedTxIndex>
+        <pulses>
+            <pulse nameKey="param263" typeKey="param264" angleKey="param265" powerKey="param266" shapeNameKey="param262" nucleusKey="param0" channelAttKey="param37" attKey="table162" ampKey="table160" shapeKey="table161" shapePhaseKey="table156" widthParamKey="param269"/>
+        </pulses>
+        <observedTxIndex>0</observedTxIndex>
     </sequence>
     <elems>
         <name>ElementRepos</name>
@@ -291,23 +293,185 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanElement" stateKey="param175" nameKey="param173" enabledKey="param174"/>
         </Entry>
         <Entry>
-            <count>1</count>
-            <key>elem42</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="txElement" offsetKey="table20" phaseKey="table21" ampKey="table22" shapeKey="table23" shapePhaseKey="table18" attKey="table24" phaseModKey="table25" shapeNameKey="param178" nameKey="param176" enabledKey="param177"/>
-        </Entry>
-        <Entry>
             <count>2</count>
             <key>elem43</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="loElement" offsetKey="table27" phaseKey="table28" phaseModKey="table29" nameKey="param179" enabledKey="param180"/>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="loElement" offsetKey="table27" phaseKey="table28" shapePhaseKey="table17" phaseModKey="table29" nameKey="param179" enabledKey="param180"/>
         </Entry>
         <Entry>
             <count>1</count>
             <key>elem44</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="acquElement" nbPointKey="param183" nameKey="param181" enabledKey="param182"/>
         </Entry>
+        <Entry>
+            <count>1</count>
+            <key>elem59</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="txElement" offsetKey="table158" phaseKey="table159" ampKey="table160" shapeKey="table161" shapePhaseKey="table156" attKey="table162" phaseModKey="table163" shapeNameKey="param262" nameKey="param260" enabledKey="param261"/>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>elem61</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="txElement" offsetKey="table176" phaseKey="table177" ampKey="table160" shapeKey="table161" shapePhaseKey="table156" attKey="table162" phaseModKey="table178" shapeNameKey="param262" nameKey="param273" enabledKey="param274"/>
+        </Entry>
     </elems>
     <params>
         <name>ParamRepos</name>
+        <Entry>
+            <count>2</count>
+            <key>param0</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_nucleus</name>
+                <uuid>19576630-392c-4b12-a4d7-58daf7fb7c3b</uuid>
+                <value>1H</value>
+                <defaultValue>1H</defaultValue>
+                <description>Nucleus used for the first sequence channel</description>
+                <displayedName>Nucleus 1</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>true</restrictedToSuggested>
+                <suggestedValues>Y</suggestedValues>
+                <suggestedValues>Other</suggestedValues>
+                <suggestedValues>X</suggestedValues>
+                <suggestedValues>1H</suggestedValues>
+                <suggestedValues>2H</suggestedValues>
+                <suggestedValues>3H</suggestedValues>
+                <suggestedValues>3He</suggestedValues>
+                <suggestedValues>6Li</suggestedValues>
+                <suggestedValues>7Li</suggestedValues>
+                <suggestedValues>9Be</suggestedValues>
+                <suggestedValues>10B</suggestedValues>
+                <suggestedValues>11B</suggestedValues>
+                <suggestedValues>13C</suggestedValues>
+                <suggestedValues>14N</suggestedValues>
+                <suggestedValues>15N</suggestedValues>
+                <suggestedValues>17O</suggestedValues>
+                <suggestedValues>19F</suggestedValues>
+                <suggestedValues>21Ne</suggestedValues>
+                <suggestedValues>23Na</suggestedValues>
+                <suggestedValues>25Mg</suggestedValues>
+                <suggestedValues>27Al</suggestedValues>
+                <suggestedValues>29Si</suggestedValues>
+                <suggestedValues>31P</suggestedValues>
+                <suggestedValues>33S</suggestedValues>
+                <suggestedValues>35Cl</suggestedValues>
+                <suggestedValues>37Cl</suggestedValues>
+                <suggestedValues>39K</suggestedValues>
+                <suggestedValues>40K</suggestedValues>
+                <suggestedValues>41K</suggestedValues>
+                <suggestedValues>43Ca</suggestedValues>
+                <suggestedValues>45Sc</suggestedValues>
+                <suggestedValues>47Ti</suggestedValues>
+                <suggestedValues>49Ti</suggestedValues>
+                <suggestedValues>50V</suggestedValues>
+                <suggestedValues>51V</suggestedValues>
+                <suggestedValues>53Cr</suggestedValues>
+                <suggestedValues>55Mn</suggestedValues>
+                <suggestedValues>57Fe</suggestedValues>
+                <suggestedValues>59Co</suggestedValues>
+                <suggestedValues>61Ni</suggestedValues>
+                <suggestedValues>63Cu</suggestedValues>
+                <suggestedValues>65Cu</suggestedValues>
+                <suggestedValues>67Zn</suggestedValues>
+                <suggestedValues>69Ga</suggestedValues>
+                <suggestedValues>71Ga</suggestedValues>
+                <suggestedValues>73Ge</suggestedValues>
+                <suggestedValues>75As</suggestedValues>
+                <suggestedValues>77Se</suggestedValues>
+                <suggestedValues>79Br</suggestedValues>
+                <suggestedValues>81Br</suggestedValues>
+                <suggestedValues>83Kr</suggestedValues>
+                <suggestedValues>85Rb</suggestedValues>
+                <suggestedValues>87Rb</suggestedValues>
+                <suggestedValues>87Sr</suggestedValues>
+                <suggestedValues>89Y</suggestedValues>
+                <suggestedValues>91Zr</suggestedValues>
+                <suggestedValues>93Nb</suggestedValues>
+                <suggestedValues>95Mo</suggestedValues>
+                <suggestedValues>97Mo</suggestedValues>
+                <suggestedValues>99Tc</suggestedValues>
+                <suggestedValues>99Ru</suggestedValues>
+                <suggestedValues>101Ru</suggestedValues>
+                <suggestedValues>103Rh</suggestedValues>
+                <suggestedValues>105Pd</suggestedValues>
+                <suggestedValues>107Ag</suggestedValues>
+                <suggestedValues>109Ag</suggestedValues>
+                <suggestedValues>111Cd</suggestedValues>
+                <suggestedValues>113Cd</suggestedValues>
+                <suggestedValues>113In</suggestedValues>
+                <suggestedValues>115Sn</suggestedValues>
+                <suggestedValues>115In</suggestedValues>
+                <suggestedValues>117Sn</suggestedValues>
+                <suggestedValues>119Sn</suggestedValues>
+                <suggestedValues>121Sb</suggestedValues>
+                <suggestedValues>123Te</suggestedValues>
+                <suggestedValues>123Sb</suggestedValues>
+                <suggestedValues>125Te</suggestedValues>
+                <suggestedValues>127I</suggestedValues>
+                <suggestedValues>129Xe</suggestedValues>
+                <suggestedValues>131Xe</suggestedValues>
+                <suggestedValues>133Cs</suggestedValues>
+                <suggestedValues>135Ba</suggestedValues>
+                <suggestedValues>137Ba</suggestedValues>
+                <suggestedValues>138La</suggestedValues>
+                <suggestedValues>139La</suggestedValues>
+                <suggestedValues>141Pr</suggestedValues>
+                <suggestedValues>143Nd</suggestedValues>
+                <suggestedValues>145Nd</suggestedValues>
+                <suggestedValues>147Sm</suggestedValues>
+                <suggestedValues>149Sm</suggestedValues>
+                <suggestedValues>151Eu</suggestedValues>
+                <suggestedValues>153Eu</suggestedValues>
+                <suggestedValues>155Gd</suggestedValues>
+                <suggestedValues>157Gd</suggestedValues>
+                <suggestedValues>159Tb</suggestedValues>
+                <suggestedValues>161Dy</suggestedValues>
+                <suggestedValues>163Dy</suggestedValues>
+                <suggestedValues>165Ho</suggestedValues>
+                <suggestedValues>167Er</suggestedValues>
+                <suggestedValues>169Tm</suggestedValues>
+                <suggestedValues>171Yb</suggestedValues>
+                <suggestedValues>173Yb</suggestedValues>
+                <suggestedValues>175Lu</suggestedValues>
+                <suggestedValues>176Lu</suggestedValues>
+                <suggestedValues>177Hf</suggestedValues>
+                <suggestedValues>179Hf</suggestedValues>
+                <suggestedValues>181Ta</suggestedValues>
+                <suggestedValues>183W</suggestedValues>
+                <suggestedValues>185Re</suggestedValues>
+                <suggestedValues>187Re</suggestedValues>
+                <suggestedValues>187Os</suggestedValues>
+                <suggestedValues>189Os</suggestedValues>
+                <suggestedValues>191Ir</suggestedValues>
+                <suggestedValues>193Ir</suggestedValues>
+                <suggestedValues>195Pt</suggestedValues>
+                <suggestedValues>197Au</suggestedValues>
+                <suggestedValues>199Hg</suggestedValues>
+                <suggestedValues>201Hg</suggestedValues>
+                <suggestedValues>203Tl</suggestedValues>
+                <suggestedValues>205Tl</suggestedValues>
+                <suggestedValues>207Pb</suggestedValues>
+                <suggestedValues>209Bi</suggestedValues>
+                <suggestedValues>235U</suggestedValues>
+                <group>Miscellaneous</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param1</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Intermediate_frequency</name>
+                <uuid>b4ea6228-6ec9-4195-9fb1-634ff72251f9</uuid>
+                <value>1.26E7</value>
+                <defaultValue>1.0</defaultValue>
+                <displayedName>Intermediate_frequency</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Frequency</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>3.0E9</maxValue>
+            </value>
+        </Entry>
         <Entry>
             <count>1</count>
             <key>param2</key>
@@ -384,6 +548,160 @@
         </Entry>
         <Entry>
             <count>1</count>
+            <key>param7</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Accu_dim</name>
+                <uuid>b1d7615b-236e-4fad-8613-af6c54466581</uuid>
+                <value>1</value>
+                <defaultValue>1</defaultValue>
+                <description>Dimension of data accumulation</description>
+                <displayedName>Accu_dim</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Integer</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>4</maxValue>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param8</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Pre_scan</name>
+                <uuid>c2f23bbd-bbbe-413f-b37a-18079af2f265</uuid>
+                <value>0</value>
+                <defaultValue>0</defaultValue>
+                <description>PreScan</description>
+                <displayedName>Pre_scan</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Scan</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>2147483647</maxValue>
+                <group>Dimension</group>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param9</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>FIR_coef</name>
+                <uuid>6f62f8c7-ea00-425f-96c6-487d4250b69a</uuid>
+                <value>0</value>
+                <defaultValue>0</defaultValue>
+                <displayedName>FIR_coef</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Integer</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>15</maxValue>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param10</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Ext_trig_source</name>
+                <uuid>5556ebce-466d-4963-b9c7-bb14adab60dd</uuid>
+                <value>Ext1</value>
+                <defaultValue>Ext1</defaultValue>
+                <description>Source of external trigger</description>
+                <displayedName>Ext_trig_source</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>true</restrictedToSuggested>
+                <suggestedValues>Ext1</suggestedValues>
+                <suggestedValues>Ext2</suggestedValues>
+                <suggestedValues>Ext1_AND_Ext2</suggestedValues>
+                <suggestedValues>Ext1_XOR_Ext2</suggestedValues>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param11</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Ext_trig_mode</name>
+                <uuid>266a4e20-2ba8-4731-8bbc-70aca04180e8</uuid>
+                <value>RisingEdge</value>
+                <defaultValue>RisingEdge</defaultValue>
+                <description>Mode of external trigger</description>
+                <displayedName>Ext_trig_mode</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>true</restrictedToSuggested>
+                <suggestedValues>RisingEdge</suggestedValues>
+                <suggestedValues>FallingEdge</suggestedValues>
+                <suggestedValues>StateHigh</suggestedValues>
+                <suggestedValues>StateLow</suggestedValues>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param12</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Update_dimension</name>
+                <uuid>350d75dd-45fb-4de3-a5ad-c071d1511c15</uuid>
+                <value>Disable</value>
+                <defaultValue>Disable</defaultValue>
+                <description>Update Table content on this dimension</description>
+                <displayedName>Update_dimension</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>true</restrictedToSuggested>
+                <suggestedValues>Disable</suggestedValues>
+                <suggestedValues>1D</suggestedValues>
+                <suggestedValues>2D</suggestedValues>
+                <suggestedValues>3D</suggestedValues>
+                <suggestedValues>4D</suggestedValues>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param13</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>TTL_id</name>
+                <uuid>25dec2b4-3f64-47a7-86bd-388935fc7a38</uuid>
+                <value>NC</value>
+                <defaultValue>SEL_H_F</defaultValue>
+                <displayedName>TTL_id</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>true</restrictedToSuggested>
+                <suggestedValues>SEL_H_F</suggestedValues>
+                <suggestedValues>SEL_X_F</suggestedValues>
+                <suggestedValues>NC</suggestedValues>
+                <suggestedValues>BlkTX1</suggestedValues>
+                <suggestedValues>BlkTX2</suggestedValues>
+                <suggestedValues>BlkTX3</suggestedValues>
+                <suggestedValues>BlkTX4</suggestedValues>
+                <suggestedValues>BlkGradX</suggestedValues>
+                <suggestedValues>BlkGradY</suggestedValues>
+                <suggestedValues>BlkGradZ</suggestedValues>
+                <suggestedValues>LockHold</suggestedValues>
+                <suggestedValues>ScopeTrigger</suggestedValues>
+                <suggestedValues>USER0</suggestedValues>
+                <suggestedValues>USER1</suggestedValues>
+                <suggestedValues>USER2</suggestedValues>
+                <suggestedValues>USER3</suggestedValues>
+                <suggestedValues>USER4</suggestedValues>
+                <suggestedValues>USER5</suggestedValues>
+                <suggestedValues>USER6</suggestedValues>
+                <suggestedValues>USER7</suggestedValues>
+                <suggestedValues>USER8</suggestedValues>
+                <suggestedValues>USER9</suggestedValues>
+                <suggestedValues>USER10</suggestedValues>
+                <suggestedValues>USER11</suggestedValues>
+                <suggestedValues>USER12</suggestedValues>
+                <suggestedValues>USER13</suggestedValues>
+                <suggestedValues>USER14</suggestedValues>
+                <suggestedValues>USER15</suggestedValues>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
             <key>param15</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>Nb_1d</name>
@@ -391,7 +709,7 @@
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <displayedName>Nb_1d</displayedName>
-                <locked>false</locked>
+                <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>Scan</numberEnum>
@@ -443,7 +761,7 @@
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <displayedName>Nb_2d</displayedName>
-                <locked>false</locked>
+                <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>Scan</numberEnum>
@@ -495,7 +813,7 @@
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <displayedName>Nb_3d</displayedName>
-                <locked>false</locked>
+                <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>Scan</numberEnum>
@@ -547,7 +865,7 @@
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <displayedName>Nb_4d</displayedName>
-                <locked>false</locked>
+                <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>Scan</numberEnum>
@@ -600,7 +918,7 @@
                 <defaultValue>0</defaultValue>
                 <description>Dummy Scan</description>
                 <displayedName>Dummy_scan</displayedName>
-                <locked>false</locked>
+                <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>Scan</numberEnum>
@@ -737,7 +1055,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>Frequency</name>
                 <uuid>0aa6a7fd-cd7a-499d-afdc-a695535b01e2</uuid>
-                <value>6.35E7</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>6.35E7</defaultValue>
                 <displayedName>Frequency</displayedName>
                 <locked>false</locked>
@@ -749,15 +1067,15 @@
             </value>
         </Entry>
         <Entry>
-            <count>1</count>
+            <count>2</count>
             <key>param37</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>Tx_att</name>
                 <uuid>400eaaae-83ba-4a5c-91fb-27ae3aacc2a7</uuid>
-                <value>30.0</value>
+                <value>0.0</value>
                 <defaultValue>30.0</defaultValue>
                 <displayedName>Tx_att</displayedName>
-                <locked>false</locked>
+                <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>TxAtt</numberEnum>
@@ -803,7 +1121,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TxAtt</name>
                 <uuid>d515ea30-d672-42fa-9603-3b98c0368140</uuid>
-                <value>0.0</value>
+                <value>15.0</value>
                 <defaultValue>0.0</defaultValue>
                 <displayedName>TxAtt</displayedName>
                 <locked>false</locked>
@@ -838,7 +1156,7 @@
                 <value>12500.0</value>
                 <defaultValue>12500.0</defaultValue>
                 <displayedName>Spectral_width2</displayedName>
-                <locked>false</locked>
+                <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>SW</numberEnum>
@@ -2782,50 +3100,6 @@
         </Entry>
         <Entry>
             <count>1</count>
-            <key>param176</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
-                <name>Name41</name>
-                <uuid>c0921b06-9e2a-4824-8ccd-1564d3315be4</uuid>
-                <value>Txe</value>
-                <defaultValue>Elem</defaultValue>
-                <description>The name of the element</description>
-                <displayedName>Name41</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <restrictedToSuggested>false</restrictedToSuggested>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param177</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
-                <name>Enabled41</name>
-                <uuid>33ff58d2-0f96-4f11-9301-e5a4b240ebc4</uuid>
-                <value>true</value>
-                <defaultValue>true</defaultValue>
-                <description>The state of the element</description>
-                <displayedName>Enabled41</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param178</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
-                <name>Tx_shape_name</name>
-                <uuid>986650c0-d6e3-4cc4-a623-db4a7a3198ca</uuid>
-                <value>Custom</value>
-                <defaultValue>Custom</defaultValue>
-                <description>Name of the shape, also the name of the shape file.</description>
-                <displayedName>Shape name</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <restrictedToSuggested>false</restrictedToSuggested>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
             <key>param179</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>Name42</name>
@@ -2918,6 +3192,566 @@
                 <suggestedValues>SpectralWidth</suggestedValues>
             </value>
         </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param186</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name5</name>
+                <uuid>710f8210-976c-4a06-9ec5-1de9c05aaec2</uuid>
+                <value>Custom</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param187</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name6</name>
+                <uuid>a8e19291-6529-42c8-8b9b-355a9e27766f</uuid>
+                <value>Custom</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param188</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name7</name>
+                <uuid>10e96749-6fde-4ee9-bee0-ad93a7d7507b</uuid>
+                <value>Custom</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param192</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name8</name>
+                <uuid>992855c8-2590-4349-b5f2-47482863688f</uuid>
+                <value>Custom</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param193</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name9</name>
+                <uuid>db3fafd3-b5d4-467c-a248-b15d6c06c2f3</uuid>
+                <value>Custom</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param194</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name10</name>
+                <uuid>a02c7a35-c4eb-4299-98e0-1f1db0136cac</uuid>
+                <value>Custom</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param195</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name14</name>
+                <uuid>977e34b8-c88a-49a3-bc39-c35a412cf427</uuid>
+                <value>Custom</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param196</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name17</name>
+                <uuid>caa64528-b62d-40ec-89fa-bfd70b936ebe</uuid>
+                <value>Custom</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param197</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name19</name>
+                <uuid>3bfded68-3a07-43ab-a727-895a6b4d38ca</uuid>
+                <value>Custom</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param205</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name2</name>
+                <uuid>b06ac927-f562-4b91-aef9-1c8327af942f</uuid>
+                <value>Chirp2</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param212</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>P2_width</name>
+                <uuid>4b470191-308b-447d-96c0-810509226069</uuid>
+                <value>9.999999999999999E-6</value>
+                <description></description>
+                <displayedName>P2_width</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param218</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name</name>
+                <uuid>bb13c2b7-97bb-4bcd-930c-b7cfee2abe73</uuid>
+                <value>Chirp2</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param225</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>P3_width</name>
+                <uuid>b3a872a1-35b1-4aeb-94da-c4fb35de17ad</uuid>
+                <value>9.999999999999999E-6</value>
+                <description></description>
+                <displayedName>P3_width</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param239</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name3</name>
+                <uuid>b2cf5218-a8ef-4680-8c18-fcb594ec5f25</uuid>
+                <value>Chirp</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param249</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>P4_width</name>
+                <uuid>4cc1e78f-fd42-48d5-8ba5-d828c0a80f4d</uuid>
+                <value>9.999999999999999E-6</value>
+                <description></description>
+                <displayedName>P4_width</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param260</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Name41</name>
+                <uuid>9537be8b-26d2-426f-87ea-0ab17d3152f0</uuid>
+                <value>Txe</value>
+                <defaultValue>Elem</defaultValue>
+                <description>The name of the element</description>
+                <displayedName>Name41</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param261</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
+                <name>Enabled41</name>
+                <uuid>1901487d-b00d-4c36-905b-f2f4fca39b0e</uuid>
+                <value>true</value>
+                <defaultValue>true</defaultValue>
+                <description>The state of the element</description>
+                <displayedName>Enabled41</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+            </value>
+        </Entry>
+        <Entry>
+            <count>4</count>
+            <key>param262</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name4</name>
+                <uuid>17b413c9-35c6-457f-ab37-0b1061ba7f91</uuid>
+                <value>Chirp</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param263</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>p_name</name>
+                <uuid>43e6773e-d6dc-4cb0-af3d-a90edbd6a8bd</uuid>
+                <value>p</value>
+                <defaultValue>p</defaultValue>
+                <description>Name of the pulse</description>
+                <displayedName>p_name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param264</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="enumParam">
+                <name>p_type</name>
+                <uuid>11c1f02d-a4ca-4b37-a66a-63c39882388d</uuid>
+                <value xsi:type="pulseType">HARD</value>
+                <defaultValue xsi:type="pulseType">HARD</defaultValue>
+                <displayedName>p_type</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param265</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>p_angle</name>
+                <uuid>5e11e824-124e-48f4-8e9a-5088c28579d4</uuid>
+                <value>90.0</value>
+                <defaultValue>90.0</defaultValue>
+                <displayedName>p_angle</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>PulseAngle</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.7976931348623157E308</maxValue>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param266</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>p_power</name>
+                <uuid>4f2d8ddf-b99c-40d8-abff-555dbe4c0668</uuid>
+                <value>1.0</value>
+                <defaultValue>30.0</defaultValue>
+                <displayedName>p_power</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Power</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>10000.0</maxValue>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param269</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>p_width2</name>
+                <uuid>47f993ef-0c98-48f9-a3ef-d07d9c08b7c1</uuid>
+                <value>9.999999999999999E-6</value>
+                <description></description>
+                <displayedName>p_width2</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param273</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Name45</name>
+                <uuid>b821269d-086d-48a0-8c28-905db1476171</uuid>
+                <value>Txe3</value>
+                <defaultValue>Elem</defaultValue>
+                <description>The name of the element</description>
+                <displayedName>Name45</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param274</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
+                <name>Enabled45</name>
+                <uuid>3235b1e9-09a6-4eec-8036-7e3f45765dd6</uuid>
+                <value>true</value>
+                <defaultValue>true</defaultValue>
+                <description>The state of the element</description>
+                <displayedName>Enabled45</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param369</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width67</name>
+                <uuid>57576a10-d41e-4a3e-ab76-4e853b1a79ef</uuid>
+                <value>1.305E-5</value>
+                <description></description>
+                <displayedName>_width67</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param373</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width68</name>
+                <uuid>8aedc01b-d9e3-446f-92e3-f54090188404</uuid>
+                <value>2.609E-5</value>
+                <description></description>
+                <displayedName>_width68</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param377</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width70</name>
+                <uuid>fb6faffa-cea0-4cb6-89ac-8f00443ca650</uuid>
+                <value>3.9135E-5</value>
+                <description></description>
+                <displayedName>_width70</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param381</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width71</name>
+                <uuid>07ffe08e-4621-4b21-a2ee-db8bf6121fd5</uuid>
+                <value>1.305E-5</value>
+                <description></description>
+                <displayedName>_width71</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param385</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width72</name>
+                <uuid>f0f8d872-ed18-4c17-bb5e-f97c06d6370e</uuid>
+                <value>2.609E-5</value>
+                <description></description>
+                <displayedName>_width72</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param389</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width73</name>
+                <uuid>2b7c01e7-54a4-4d0c-b70a-b3699fa3f462</uuid>
+                <value>3.9135E-5</value>
+                <description></description>
+                <displayedName>_width73</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param393</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width66</name>
+                <uuid>ed362124-d39f-471b-86cd-07a1bec53aac</uuid>
+                <value>1.9574999999999998E-5</value>
+                <description></description>
+                <displayedName>_width66</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param397</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width69</name>
+                <uuid>d840354a-90cd-4cd9-9bc5-50690855f849</uuid>
+                <value>6.525E-6</value>
+                <description></description>
+                <displayedName>_width69</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param404</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>p_width</name>
+                <uuid>2e5ad89a-9fb6-466c-b7af-410045b35bcc</uuid>
+                <value>1.305E-5</value>
+                <description></description>
+                <displayedName>p_width</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
     </params>
     <tables>
         <name>TableRepos</name>
@@ -2932,6 +3766,19 @@
                 <locked>false</locked>
                 <address>-1</address>
                 <list>0</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table1</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
+                <name>Rx_gain</name>
+                <description></description>
+                <numberEnum>RxGain</numberEnum>
+                <order>One</order>
+                <locked>true</locked>
+                <address>-1</address>
+                <list>30.0</list>
             </value>
         </Entry>
         <Entry>
@@ -2981,9 +3828,9 @@
                 <description></description>
                 <numberEnum>Time</numberEnum>
                 <order>One</order>
-                <locked>false</locked>
+                <locked>true</locked>
                 <address>-1</address>
-                <list>1.0E-5</list>
+                <list>9.999999999999999E-6</list>
             </value>
         </Entry>
         <Entry>
@@ -3033,9 +3880,9 @@
                 <description></description>
                 <numberEnum>Time</numberEnum>
                 <order>One</order>
-                <locked>false</locked>
+                <locked>true</locked>
                 <address>-1</address>
-                <list>1.0E-5</list>
+                <list>9.999999999999999E-6</list>
             </value>
         </Entry>
         <Entry>
@@ -3061,7 +3908,7 @@
                 <order>One</order>
                 <locked>false</locked>
                 <address>-1</address>
-                <list>1.0E-5</list>
+                <list>1.305E-5</list>
             </value>
         </Entry>
         <Entry>
@@ -3087,7 +3934,91 @@
                 <order>One</order>
                 <locked>false</locked>
                 <address>-1</address>
-                <list>1.0E-5</list>
+                <generator>
+                    <name>Expression Generator</name>
+                    <params xsi:type="numberParam">
+                        <name>Nb_1d</name>
+                        <uuid>b19ec8e2-b003-4135-842e-8efb3a5875ac</uuid>
+                        <value>1</value>
+                        <defaultValue>64</defaultValue>
+                        <description>i</description>
+                        <displayedName>Nb Points</displayedName>
+                        <locked>false</locked>
+                        <lockedToDefault>false</lockedToDefault>
+                        <restrictedToSuggested>false</restrictedToSuggested>
+                        <numberEnum>Integer</numberEnum>
+                        <minValue>1</minValue>
+                        <maxValue>2147483647</maxValue>
+                    </params>
+                    <params xsi:type="numberParam">
+                        <name>Pre_scan</name>
+                        <uuid>96f31210-e331-477a-a3b4-ea52fa4c7836</uuid>
+                        <value>0.0</value>
+                        <defaultValue>0.0</defaultValue>
+                        <description>a</description>
+                        <displayedName>a</displayedName>
+                        <locked>false</locked>
+                        <lockedToDefault>false</lockedToDefault>
+                        <restrictedToSuggested>false</restrictedToSuggested>
+                        <numberEnum>Double</numberEnum>
+                        <minValue>-1.7976931348623157E308</minValue>
+                        <maxValue>1.7976931348623157E308</maxValue>
+                    </params>
+                    <params xsi:type="numberParam">
+                        <name>b</name>
+                        <uuid>a8867778-1c7f-4d9a-b806-77e6e7483a3e</uuid>
+                        <value>0.0</value>
+                        <defaultValue>0.0</defaultValue>
+                        <description>b</description>
+                        <displayedName>b</displayedName>
+                        <locked>false</locked>
+                        <lockedToDefault>false</lockedToDefault>
+                        <restrictedToSuggested>false</restrictedToSuggested>
+                        <numberEnum>Double</numberEnum>
+                        <minValue>-1.7976931348623157E308</minValue>
+                        <maxValue>1.7976931348623157E308</maxValue>
+                    </params>
+                    <params xsi:type="numberParam">
+                        <name>c</name>
+                        <uuid>136cd47e-a928-4861-b5f9-b33006b0b832</uuid>
+                        <value>0.0</value>
+                        <defaultValue>0.0</defaultValue>
+                        <description>c</description>
+                        <displayedName>c</displayedName>
+                        <locked>false</locked>
+                        <lockedToDefault>false</lockedToDefault>
+                        <restrictedToSuggested>false</restrictedToSuggested>
+                        <numberEnum>Double</numberEnum>
+                        <minValue>-1.7976931348623157E308</minValue>
+                        <maxValue>1.7976931348623157E308</maxValue>
+                    </params>
+                    <params xsi:type="numberParam">
+                        <name>d</name>
+                        <uuid>57ed501a-702c-432d-9be8-c89cb279915c</uuid>
+                        <value>0.0</value>
+                        <defaultValue>0.0</defaultValue>
+                        <description>d</description>
+                        <displayedName>d</displayedName>
+                        <locked>false</locked>
+                        <lockedToDefault>false</lockedToDefault>
+                        <restrictedToSuggested>false</restrictedToSuggested>
+                        <numberEnum>Double</numberEnum>
+                        <minValue>-1.7976931348623157E308</minValue>
+                        <maxValue>1.7976931348623157E308</maxValue>
+                    </params>
+                    <params xsi:type="textParam">
+                        <name>Expression</name>
+                        <uuid>358002b9-6354-420f-8602-efc487aa5ca8</uuid>
+                        <value>((Nb_1d+Pre_scan)%4)+1</value>
+                        <defaultValue>i</defaultValue>
+                        <description></description>
+                        <displayedName>Expression</displayedName>
+                        <locked>false</locked>
+                        <lockedToDefault>false</lockedToDefault>
+                        <restrictedToSuggested>false</restrictedToSuggested>
+                    </params>
+                </generator>
+                <list>2.0</list>
             </value>
         </Entry>
         <Entry>
@@ -3113,7 +4044,7 @@
                 <order>One</order>
                 <locked>false</locked>
                 <address>-1</address>
-                <list>0.5</list>
+                <list>1.305E-5</list>
             </value>
         </Entry>
         <Entry>
@@ -3131,92 +4062,14 @@
         </Entry>
         <Entry>
             <count>1</count>
-            <key>table18</key>
+            <key>table17</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="shape">
-                <name>Shape_phase</name>
+                <name>Shape_phase2</name>
                 <description></description>
                 <numberEnum>Phase</numberEnum>
                 <order>One</order>
                 <locked>false</locked>
                 <address>-1</address>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>table20</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
-                <name>Frequency_offset</name>
-                <description></description>
-                <numberEnum>FrequencyOffset</numberEnum>
-                <order>One</order>
-                <locked>false</locked>
-                <address>-1</address>
-                <list>0</list>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>table21</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
-                <name>Tx_phase</name>
-                <description></description>
-                <numberEnum>Phase</numberEnum>
-                <order>One</order>
-                <locked>false</locked>
-                <address>-1</address>
-                <list>0.0</list>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>table22</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
-                <name>Tx_amp</name>
-                <description></description>
-                <numberEnum>TxAmp</numberEnum>
-                <order>One</order>
-                <locked>false</locked>
-                <address>-1</address>
-                <list>10</list>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>table23</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="shape">
-                <name>Tx_shape</name>
-                <description></description>
-                <numberEnum>TxShape</numberEnum>
-                <order>One</order>
-                <locked>false</locked>
-                <address>-1</address>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>table24</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
-                <name>Tx_att2</name>
-                <description></description>
-                <numberEnum>TxAtt</numberEnum>
-                <order>One</order>
-                <locked>false</locked>
-                <address>-1</address>
-                <list>0</list>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>table25</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="phaseModTable">
-                <name>PhaseModTable2</name>
-                <description></description>
-                <numberEnum>Phase</numberEnum>
-                <order>One</order>
-                <locked>false</locked>
-                <address>-1</address>
-                <list>0</list>
-                <phaseModEnum>NONE</phaseModEnum>
             </value>
         </Entry>
         <Entry>
@@ -3250,6 +4103,392 @@
             <key>table29</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="phaseModTable">
                 <name>PhaseModTable3</name>
+                <description></description>
+                <numberEnum>Phase</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>0</list>
+                <phaseModEnum>NONE</phaseModEnum>
+            </value>
+        </Entry>
+        <Entry>
+            <count>3</count>
+            <key>table156</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="shape">
+                <name>Chirp_phase</name>
+                <description></description>
+                <numberEnum>Phase</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>5.0</list>
+                <list>28.293714059226865</list>
+                <list>49.99999999999999</list>
+                <list>68.63961030678928</list>
+                <list>82.94228634059948</list>
+                <list>91.93332436601615</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>91.93332436601615</list>
+                <list>82.94228634059948</list>
+                <list>68.63961030678928</list>
+                <list>49.99999999999999</list>
+                <list>28.293714059226865</list>
+                <list>5.0</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table158</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
+                <name>Frequency_offset</name>
+                <description></description>
+                <numberEnum>FrequencyOffset</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>0</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table159</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
+                <name>Tx_phase</name>
+                <description></description>
+                <numberEnum>Phase</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>0.0</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>3</count>
+            <key>table160</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
+                <name>p_amp</name>
+                <description></description>
+                <numberEnum>TxAmp</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>10.0</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>3</count>
+            <key>table161</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="shape">
+                <name>Chirp_amp</name>
+                <description></description>
+                <numberEnum>TxShape</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>5.6</list>
+                <list>28.293714059226865</list>
+                <list>49.99999999999999</list>
+                <list>68.63961030678928</list>
+                <list>82.94228634059948</list>
+                <list>91.93332436601615</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>95.0</list>
+                <list>91.93332436601615</list>
+                <list>82.94228634059948</list>
+                <list>68.63961030678928</list>
+                <list>49.99999999999999</list>
+                <list>28.293714059226865</list>
+                <list>5.0</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>3</count>
+            <key>table162</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
+                <name>p_att</name>
+                <description></description>
+                <numberEnum>TxAtt</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>0.0</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table163</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="phaseModTable">
+                <name>PhaseModTable2</name>
+                <description></description>
+                <numberEnum>Phase</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>0</list>
+                <phaseModEnum>NONE</phaseModEnum>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table176</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
+                <name>Frequency_offset4</name>
+                <description></description>
+                <numberEnum>FrequencyOffset</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>0</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table177</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
+                <name>Tx_phase3</name>
+                <description></description>
+                <numberEnum>Phase</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>0.0</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table178</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="phaseModTable">
+                <name>PhaseModTable5</name>
                 <description></description>
                 <numberEnum>Phase</numberEnum>
                 <order>One</order>

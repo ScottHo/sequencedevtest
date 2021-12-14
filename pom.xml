@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>rs2d-sequence</groupId>
   <artifactId>test-simple</artifactId>
-  <version>1</version>
+  <version>2</version>
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
@@ -17,12 +17,12 @@
     <dependency>
       <groupId>rs2d</groupId>
       <artifactId>rs2d-commons</artifactId>
-      <version>2021.09-NEXT</version>
+      <version>2021.12-NEXT</version>
     </dependency>
     <dependency>
       <groupId>rs2d</groupId>
       <artifactId>spinlab</artifactId>
-      <version>2021.09-NEXT</version>
+      <version>2021.12-NEXT</version>
     </dependency>
   </dependencies>
   <build>
@@ -39,7 +39,7 @@
               <RS2D-Sequence-Name>test_simple</RS2D-Sequence-Name>
               <RS2D-Sequence-File>TestSimple.sxml</RS2D-Sequence-File>
               <RS2D-Sequence-Generator>rs2d.sequence.TestSimple</RS2D-Sequence-Generator>
-              <RS2D-Spinlab-Version>[25/11/2021 16:51]</RS2D-Spinlab-Version>
+              <RS2D-Spinlab-Version>[14/12/2021 14:50]</RS2D-Spinlab-Version>
               <RS2D-Compiler-Version>1703-2021.09-NEXT</RS2D-Compiler-Version>
               <RS2D-Java-Version>11.0.1+13 (OpenJDK Runtime Environment)</RS2D-Java-Version>
             </manifestEntries>

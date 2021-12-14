@@ -44,7 +44,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>ACQUISITION_MATRIX_DIMENSION_2D</name>
                 <uuid>62dec9a9-5d31-426d-8248-7135f396c146</uuid>
-                <value>128</value>
+                <value>1</value>
                 <defaultValue>128</defaultValue>
                 <description>Size of the initial dataset (raw data; ACQUISITION_MATRIX_DIMENSION_2D)</description>
                 <displayedName>Acquisition 2D</displayedName>
@@ -141,10 +141,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>BASE_FREQ_1</name>
                 <uuid>7dd550c9-6627-42c0-88b5-cdf9bad8fa1d</uuid>
-                <value>0.0</value>
-                <defaultValue>0.0</defaultValue>
+                <value>4.0011610519686484E8</value>
+                <defaultValue>4.001170935E8</defaultValue>
                 <description>Base frequency of the first sequence channel</description>
-                <displayedName>Base Freq 1</displayedName>
+                <displayedName>Base Freq 1 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -160,10 +160,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>BASE_FREQ_2</name>
                 <uuid>9f46a86f-d1af-4c56-bc78-87eef14cf0c9</uuid>
-                <value>0.0</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Base frequency of the second sequence channel</description>
-                <displayedName>Base Freq 2</displayedName>
+                <displayedName>Base Freq 2 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -179,10 +179,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>BASE_FREQ_3</name>
                 <uuid>2436ca74-ddc0-4231-a4f5-d8573eb5dacd</uuid>
-                <value>0.0</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Base frequency of the third sequence channel</description>
-                <displayedName>Base Freq 3</displayedName>
+                <displayedName>Base Freq 3 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -198,10 +198,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>BASE_FREQ_4</name>
                 <uuid>3812ba82-ac62-467c-86a1-e1f9d08d21dd</uuid>
-                <value>0.0</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Base frequency of the fourth sequence channel</description>
-                <displayedName>Base Freq 4</displayedName>
+                <displayedName>Base Freq 4 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -238,8 +238,8 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
                 <name>DIGITAL_FILTER_REMOVED</name>
                 <uuid>32b80999-61d9-4187-b1e4-bd6a8f33a866</uuid>
-                <value>false</value>
-                <defaultValue>false</defaultValue>
+                <value>true</value>
+                <defaultValue>true</defaultValue>
                 <description>Data shift activated: true</description>
                 <displayedName>Digital filter removed</displayedName>
                 <locked>true</locked>
@@ -253,8 +253,8 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>DIGITAL_FILTER_SHIFT</name>
                 <uuid>7f838b3d-4b22-4446-b152-4776f743f411</uuid>
-                <value>0</value>
-                <defaultValue>0</defaultValue>
+                <value>18</value>
+                <defaultValue>18</defaultValue>
                 <description>Data shift due to the digital filter</description>
                 <displayedName>Digital filter shift</displayedName>
                 <locked>true</locked>
@@ -291,7 +291,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>DWELL_TIME</name>
                 <uuid>71951c53-c5e7-4e7c-988b-853a99b65f8c</uuid>
-                <value>0.0</value>
+                <value>8.0E-5</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Reception dwell time</description>
                 <displayedName>DW</displayedName>
@@ -310,7 +310,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>FID_RES</name>
                 <uuid>902e4f33-d731-4cf9-b33c-274471ffa95c</uuid>
-                <value>0.0</value>
+                <value>97.656</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Resolution of FID</description>
                 <displayedName>FID Res</displayedName>
@@ -329,7 +329,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>FID_RES_2D</name>
                 <uuid>f405ee21-9e97-46ba-89ed-611a72a403d7</uuid>
-                <value>0.0</value>
+                <value>12500.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Resolution of FID 2D</description>
                 <displayedName>FID Res 2D</displayedName>
@@ -348,8 +348,8 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>INTERMEDIATE_FREQUENCY</name>
                 <uuid>51cec751-e738-4eb7-b267-3995848e0abc</uuid>
-                <value>0.0</value>
-                <defaultValue>0.0</defaultValue>
+                <value>1.26E7</value>
+                <defaultValue>1.0</defaultValue>
                 <description>Sampling frequency after demodulation</description>
                 <displayedName>Intermediate frequency</displayedName>
                 <locked>true</locked>
@@ -408,7 +408,7 @@
                 <name>MAGNETIC_FIELD_STRENGTH</name>
                 <uuid>20b0dcb3-b66a-4b6a-8345-8f52d81a46b8</uuid>
                 <value>5</value>
-                <defaultValue>5</defaultValue>
+                <defaultValue>7</defaultValue>
                 <description>Magnetic field strength</description>
                 <displayedName>B0</displayedName>
                 <locked>true</locked>
@@ -1049,11 +1049,65 @@
             </value>
         </entry>
         <entry>
+            <key>Nb_2d</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Nb_2d</name>
+                <uuid>010ee8ad-0951-4e3f-9d6e-522ecd2c91d0</uuid>
+                <value>1</value>
+                <defaultValue>1</defaultValue>
+                <displayedName>Nb_2d</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Scan</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>2147483647</maxValue>
+                <group>Dimension</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>Nb_3d</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Nb_3d</name>
+                <uuid>1fc6d7ee-16ee-43e5-91f3-e69bf89bee58</uuid>
+                <value>1</value>
+                <defaultValue>1</defaultValue>
+                <displayedName>Nb_3d</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Scan</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>2147483647</maxValue>
+                <group>Dimension</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>Nb_4d</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Nb_4d</name>
+                <uuid>44c258fb-f8b2-4c8d-a5b3-91577ede67d9</uuid>
+                <value>1</value>
+                <defaultValue>1</defaultValue>
+                <displayedName>Nb_4d</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Scan</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>2147483647</maxValue>
+                <group>Dimension</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
             <key>OBSERVED_FREQUENCY</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>OBSERVED_FREQUENCY</name>
                 <uuid>f53e22e3-f827-448e-9b97-87ec73019a9e</uuid>
-                <value>6.3E7</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>6.3E7</defaultValue>
                 <description>Frequency of the acquisition</description>
                 <displayedName>Observed frequency</displayedName>
@@ -1214,7 +1268,7 @@
                 <value>0.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Offset frequency of the first sequence channel</description>
-                <displayedName>Offset 1</displayedName>
+                <displayedName>Offset 1 [1H]</displayedName>
                 <locked>false</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1223,6 +1277,8 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Emission</group>
                 <category>Acquisition</category>
+                <uuidBaseFrequency>7dd550c9-6627-42c0-88b5-cdf9bad8fa1d</uuidBaseFrequency>
+                <initialNumberEnum>FrequencyOffset</initialNumberEnum>
             </value>
         </entry>
         <entry>
@@ -1233,7 +1289,7 @@
                 <value>0.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Offset frequency of the second sequence channel</description>
-                <displayedName>Offset 2</displayedName>
+                <displayedName>Offset 2 [1H]</displayedName>
                 <locked>false</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1242,6 +1298,8 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Emission</group>
                 <category>Acquisition</category>
+                <uuidBaseFrequency>9f46a86f-d1af-4c56-bc78-87eef14cf0c9</uuidBaseFrequency>
+                <initialNumberEnum>FrequencyOffset</initialNumberEnum>
             </value>
         </entry>
         <entry>
@@ -1252,7 +1310,7 @@
                 <value>0.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Offset frequency of the third sequence channel</description>
-                <displayedName>Offset 3</displayedName>
+                <displayedName>Offset 3 [1H]</displayedName>
                 <locked>false</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1261,6 +1319,8 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Emission</group>
                 <category>Acquisition</category>
+                <uuidBaseFrequency>2436ca74-ddc0-4231-a4f5-d8573eb5dacd</uuidBaseFrequency>
+                <initialNumberEnum>FrequencyOffset</initialNumberEnum>
             </value>
         </entry>
         <entry>
@@ -1271,13 +1331,69 @@
                 <value>0.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Offset frequency of the fourth sequence channel</description>
-                <displayedName>Offset 4</displayedName>
+                <displayedName>Offset 4 [1H]</displayedName>
                 <locked>false</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>FrequencyOffset</numberEnum>
                 <minValue>-1.5E9</minValue>
                 <maxValue>1.5E9</maxValue>
+                <group>Emission</group>
+                <category>Acquisition</category>
+                <uuidBaseFrequency>3812ba82-ac62-467c-86a1-e1f9d08d21dd</uuidBaseFrequency>
+                <initialNumberEnum>FrequencyOffset</initialNumberEnum>
+            </value>
+        </entry>
+        <entry>
+            <key>P2_width</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>P2_width</name>
+                <uuid>4b470191-308b-447d-96c0-810509226069</uuid>
+                <value>9.999999999999999E-6</value>
+                <description></description>
+                <displayedName>P2_width</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>P3_width</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>P3_width</name>
+                <uuid>b3a872a1-35b1-4aeb-94da-c4fb35de17ad</uuid>
+                <value>9.999999999999999E-6</value>
+                <description></description>
+                <displayedName>P3_width</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>P4_width</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>P4_width</name>
+                <uuid>4cc1e78f-fd42-48d5-8ba5-d828c0a80f4d</uuid>
+                <value>9.999999999999999E-6</value>
+                <description></description>
+                <displayedName>P4_width</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
                 <group>Emission</group>
                 <category>Acquisition</category>
             </value>
@@ -1404,6 +1520,25 @@
             </value>
         </entry>
         <entry>
+            <key>Pre_scan</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Pre_scan</name>
+                <uuid>c2f23bbd-bbbe-413f-b37a-18079af2f265</uuid>
+                <value>0</value>
+                <defaultValue>0</defaultValue>
+                <description>PreScan</description>
+                <displayedName>Pre_scan</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Scan</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>2147483647</maxValue>
+                <group>Dimension</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
             <key>RECEIVER_COUNT</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>RECEIVER_COUNT</name>
@@ -1464,8 +1599,8 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>SEQUENCE_NAME</name>
                 <uuid>7a88b1c6-96f3-4919-833b-e88d662d72bc</uuid>
-                <value></value>
-                <defaultValue></defaultValue>
+                <value>test_simple</value>
+                <defaultValue>test_simple</defaultValue>
                 <description>Name of the sequence</description>
                 <displayedName>Sequence</displayedName>
                 <locked>true</locked>
@@ -1539,6 +1674,7 @@
                 <maxValue>1.0E8</maxValue>
                 <group>Reception</group>
                 <category>Acquisition</category>
+                <uuidBaseFrequency>f53e22e3-f827-448e-9b97-87ec73019a9e</uuidBaseFrequency>
                 <initialNumberEnum>SW</initialNumberEnum>
             </value>
         </entry>
@@ -1559,6 +1695,7 @@
                 <maxValue>1.0E8</maxValue>
                 <group>Reception</group>
                 <category>Acquisition</category>
+                <uuidBaseFrequency>480eb958-50e0-4840-8690-06a6508ad7e1</uuidBaseFrequency>
                 <initialNumberEnum>SW</initialNumberEnum>
             </value>
         </entry>
@@ -1603,6 +1740,8 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Reception</group>
                 <category>Acquisition</category>
+                <uuidBaseFrequency>f53e22e3-f827-448e-9b97-87ec73019a9e</uuidBaseFrequency>
+                <initialNumberEnum>FrequencyOffset</initialNumberEnum>
             </value>
         </entry>
         <entry>
@@ -1633,6 +1772,22 @@
                 <locked>false</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
+                <suggestedValues>Bordered2D</suggestedValues>
+                <suggestedValues>Bordered2D_FSE</suggestedValues>
+                <suggestedValues>Centered2D</suggestedValues>
+                <suggestedValues>Centered2D_FSE</suggestedValues>
+                <suggestedValues>Centered2D_FSERot</suggestedValues>
+                <suggestedValues>Centered2DRot</suggestedValues>
+                <suggestedValues>EchoAntiechoTransform</suggestedValues>
+                <suggestedValues>MapShim3DTransform</suggestedValues>
+                <suggestedValues>SEEPISequential</suggestedValues>
+                <suggestedValues>Sequential</suggestedValues>
+                <suggestedValues>Sequential2D</suggestedValues>
+                <suggestedValues>Sequential2DInterleaved</suggestedValues>
+                <suggestedValues>Sequential4D</suggestedValues>
+                <suggestedValues>Sequential4D_Dummy2D</suggestedValues>
+                <suggestedValues>Sequential4DBackAndForth</suggestedValues>
+                <suggestedValues>Sequential4DCine</suggestedValues>
                 <group>Scan</group>
                 <category>Acquisition</category>
             </value>
@@ -1642,10 +1797,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TRANSMIT_FREQ_1</name>
                 <uuid>9ca5a455-0ae9-4079-aeca-600ef627708f</uuid>
-                <value>0.0</value>
-                <defaultValue>0.0</defaultValue>
+                <value>4.0011610519686484E8</value>
+                <defaultValue>4.001170935E8</defaultValue>
                 <description>Transmit frequency of the first sequence channel</description>
-                <displayedName>Transmit Freq 1</displayedName>
+                <displayedName>Transmit 1 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1661,10 +1816,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TRANSMIT_FREQ_2</name>
                 <uuid>480eb958-50e0-4840-8690-06a6508ad7e1</uuid>
-                <value>0.0</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Transmit frequency of the second sequence channel</description>
-                <displayedName>Transmit Freq 2</displayedName>
+                <displayedName>Transmit 2 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1680,10 +1835,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TRANSMIT_FREQ_3</name>
                 <uuid>0ccb14c3-5f7d-4db2-ac00-3b90a4415d9e</uuid>
-                <value>0.0</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Transmit frequency of the third sequence channel</description>
-                <displayedName>Transmit Freq 3</displayedName>
+                <displayedName>Transmit 3 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1699,10 +1854,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TRANSMIT_FREQ_4</name>
                 <uuid>514489f2-7de6-419a-a3f2-a9ab10a902ba</uuid>
-                <value>0.0</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Transmit frequency of the fourth sequence channel</description>
-                <displayedName>Transmit Freq 4</displayedName>
+                <displayedName>Transmit 4 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1718,6 +1873,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
                 <name>TX_ROUTE</name>
                 <uuid>1186192f-dce6-4bf5-9666-44b50191ebf0</uuid>
+                <value>0</value>
                 <description>LogCh-&gt;PhysCh</description>
                 <displayedName>TX_ROUTE</displayedName>
                 <locked>true</locked>
@@ -1726,6 +1882,23 @@
                 <minValue>-2147483648</minValue>
                 <maxValue>2147483647</maxValue>
                 <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>Tx_att</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Tx_att</name>
+                <uuid>400eaaae-83ba-4a5c-91fb-27ae3aacc2a7</uuid>
+                <value>0.0</value>
+                <defaultValue>30.0</defaultValue>
+                <displayedName>Tx_att</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>TxAtt</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>63.0</maxValue>
                 <category>Acquisition</category>
             </value>
         </entry>
@@ -1802,6 +1975,236 @@
                 <minValue>0</minValue>
                 <maxValue>2147483647</maxValue>
                 <group>Scan</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>_width66</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width66</name>
+                <uuid>ed362124-d39f-471b-86cd-07a1bec53aac</uuid>
+                <value>1.9574999999999998E-5</value>
+                <description></description>
+                <displayedName>_width66</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>_width67</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width67</name>
+                <uuid>57576a10-d41e-4a3e-ab76-4e853b1a79ef</uuid>
+                <value>1.305E-5</value>
+                <description></description>
+                <displayedName>_width67</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>_width68</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width68</name>
+                <uuid>8aedc01b-d9e3-446f-92e3-f54090188404</uuid>
+                <value>2.609E-5</value>
+                <description></description>
+                <displayedName>_width68</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>_width69</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width69</name>
+                <uuid>d840354a-90cd-4cd9-9bc5-50690855f849</uuid>
+                <value>6.525E-6</value>
+                <description></description>
+                <displayedName>_width69</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>_width70</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width70</name>
+                <uuid>fb6faffa-cea0-4cb6-89ac-8f00443ca650</uuid>
+                <value>3.9135E-5</value>
+                <description></description>
+                <displayedName>_width70</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>_width71</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width71</name>
+                <uuid>07ffe08e-4621-4b21-a2ee-db8bf6121fd5</uuid>
+                <value>1.305E-5</value>
+                <description></description>
+                <displayedName>_width71</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>_width72</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width72</name>
+                <uuid>f0f8d872-ed18-4c17-bb5e-f97c06d6370e</uuid>
+                <value>2.609E-5</value>
+                <description></description>
+                <displayedName>_width72</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>_width73</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>_width73</name>
+                <uuid>2b7c01e7-54a4-4d0c-b70a-b3699fa3f462</uuid>
+                <value>3.9135E-5</value>
+                <description></description>
+                <displayedName>_width73</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>p_amp</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>p_amp</name>
+                <uuid>f7f7ddbe-8d98-425d-8a16-00b9d8b910b6</uuid>
+                <value>10.0</value>
+                <description></description>
+                <displayedName>p_amp</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>TxAmp</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>100.0</maxValue>
+                <order>One</order>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>p_angle</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>p_angle</name>
+                <uuid>5e11e824-124e-48f4-8e9a-5088c28579d4</uuid>
+                <value>90.0</value>
+                <defaultValue>90.0</defaultValue>
+                <displayedName>p_angle</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>PulseAngle</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.7976931348623157E308</maxValue>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>p_att</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>p_att</name>
+                <uuid>6138e67d-d592-4172-aa97-393874c5364a</uuid>
+                <value>0.0</value>
+                <description></description>
+                <displayedName>p_att</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>TxAtt</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>63.0</maxValue>
+                <order>One</order>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>p_width</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>p_width</name>
+                <uuid>2e5ad89a-9fb6-466c-b7af-410045b35bcc</uuid>
+                <value>1.305E-5</value>
+                <description></description>
+                <displayedName>p_width</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>p_width2</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
+                <name>p_width2</name>
+                <uuid>47f993ef-0c98-48f9-a3ef-d07d9c08b7c1</uuid>
+                <value>9.999999999999999E-6</value>
+                <description></description>
+                <displayedName>p_width2</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <order>One</order>
+                <group>Emission</group>
                 <category>Acquisition</category>
             </value>
         </entry>
