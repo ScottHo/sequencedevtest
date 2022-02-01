@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>rs2d-sequence</groupId>
   <artifactId>test-simple</artifactId>
-  <version>3</version>
+  <version>5</version>
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
