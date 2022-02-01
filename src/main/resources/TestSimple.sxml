@@ -82,12 +82,10 @@
             <keyList>elem40</keyList>
             <keyList>elem43</keyList>
             <keyList></keyList>
-            <keyList>elem50</keyList>
+            <keyList></keyList>
             <keyList></keyList>
         </txChannels>
-        <pulses>
-            <pulse nameKey="param237" typeKey="param238" angleKey="param239" powerKey="param240" shapeNameKey="param236" nucleusKey="param174" channelAttKey="param33" attKey="table61" ampKey="table59" shapeKey="table60" shapePhaseKey="table55" widthParamKey="param243"/>
-        </pulses>
+        <pulses/>
         <observedTxIndex>0</observedTxIndex>
     </sequence>
     <elems>
@@ -312,41 +310,6 @@
             <key>elem43</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="txElement" offsetKey="table31" phaseKey="table32" ampKey="table33" shapeKey="table34" shapePhaseKey="table29" attKey="table35" phaseModKey="table36" shapeNameKey="param192" nameKey="param190" enabledKey="param191"/>
         </Entry>
-        <Entry>
-            <count>1</count>
-            <key>elem44</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="timeElement" timeKey="table37" triggerKey="param195" nameKey="param193" enabledKey="param194"/>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>elem50</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="seqAs" sourceSequenceName="" patternDurationKey="param189" txSelected="0" address="-1" randomStartKey="param212" pulse90EnableKey="param213" pulse90WidthKey="param214" phaseModValueKey="param184" phaseModOrderKey="param185" additivePhaseKey="param186" nameKey="param187" enabledKey="param188">
-                <txChannel baseFreqKey="param32" levelKey="param33" nucleusKey="param174" nameKey="param31">
-                    <keyList>elem53</keyList>
-                    <keyList>elem53</keyList>
-                    <keyList>elem53</keyList>
-                    <keyList>elem53</keyList>
-                </txChannel>
-                <timeChannel nameKey="param14" defaultElementKey="elem44">
-                    <keyList>elem54</keyList>
-                    <keyList>elem54</keyList>
-                    <keyList>elem54</keyList>
-                    <keyList>elem54</keyList>
-                </timeChannel>
-                <generated>true</generated>
-                <instructionCount>4</instructionCount>
-            </value>
-        </Entry>
-        <Entry>
-            <count>4</count>
-            <key>elem53</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="txElement" offsetKey="table57" phaseKey="table58" ampKey="table59" shapeKey="table60" shapePhaseKey="table55" attKey="table61" phaseModKey="table62" shapeNameKey="param236" nameKey="param234" enabledKey="param235"/>
-        </Entry>
-        <Entry>
-            <count>4</count>
-            <key>elem54</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="timeElement" timeKey="table53" triggerKey="param233" nameKey="param231" enabledKey="param232"/>
-        </Entry>
     </elems>
     <params>
         <name>ParamRepos</name>
@@ -557,7 +520,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>2</count>
+            <count>1</count>
             <key>param14</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>Channel_name4</name>
@@ -849,7 +812,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>2</count>
+            <count>1</count>
             <key>param31</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>Channel_name5</name>
@@ -864,7 +827,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>2</count>
+            <count>1</count>
             <key>param32</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>Frequency</name>
@@ -881,7 +844,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>3</count>
+            <count>1</count>
             <key>param33</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>Tx_att</name>
@@ -2942,7 +2905,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>3</count>
+            <count>1</count>
             <key>param174</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>Tx_nucleus</name>
@@ -3273,99 +3236,6 @@
         </Entry>
         <Entry>
             <count>1</count>
-            <key>param184</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="enumParam">
-                <name>Async_phase_mod_value2</name>
-                <uuid>bd0d7258-7317-48dc-9564-d16fb0d0ebb6</uuid>
-                <value xsi:type="phaseMod">NONE</value>
-                <defaultValue xsi:type="phaseMod">NONE</defaultValue>
-                <description></description>
-                <displayedName>Phase mod.</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param185</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="enumParam">
-                <name>Async_phase_mod_order2</name>
-                <uuid>899dcaae-4946-4a5d-a1fe-069e6e263f65</uuid>
-                <value xsi:type="order">One</value>
-                <defaultValue xsi:type="order">One</defaultValue>
-                <description></description>
-                <displayedName>Phase mod. order</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param186</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
-                <name>Async_additive_phase2</name>
-                <uuid>35408425-4497-416b-955e-367a8e6f7261</uuid>
-                <value>0.0</value>
-                <defaultValue>0.0</defaultValue>
-                <description></description>
-                <displayedName>Additive phase</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <restrictedToSuggested>false</restrictedToSuggested>
-                <numberEnum>Phase</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>360.0</maxValue>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param187</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
-                <name>Name44</name>
-                <uuid>f2124bbd-fd7f-43fa-9d47-ce5dfc0247a4</uuid>
-                <value>Asynchronous Sequence</value>
-                <defaultValue>Elem</defaultValue>
-                <description>The name of the element</description>
-                <displayedName>Name44</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <restrictedToSuggested>false</restrictedToSuggested>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param188</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
-                <name>Enabled44</name>
-                <uuid>1f647e33-efe7-43db-b20d-e5585c14f9b3</uuid>
-                <value>true</value>
-                <defaultValue>true</defaultValue>
-                <description>The state of the element</description>
-                <displayedName>Enabled44</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param189</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
-                <name>PatternDuration</name>
-                <uuid>f2e6878b-b4c7-4d83-a329-d11dfed4735f</uuid>
-                <value>1.9999999999999998E-5</value>
-                <defaultValue>0.0</defaultValue>
-                <displayedName>PatternDuration</displayedName>
-                <locked>true</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <restrictedToSuggested>false</restrictedToSuggested>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <group>User</group>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
             <key>param190</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>Name48</name>
@@ -3406,95 +3276,6 @@
                 <locked>false</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param193</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
-                <name>Name45</name>
-                <uuid>11fbb5e6-8395-4117-9f03-537b27e11ea6</uuid>
-                <value>Time9</value>
-                <defaultValue>Elem</defaultValue>
-                <description>The name of the element</description>
-                <displayedName>Name45</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <restrictedToSuggested>false</restrictedToSuggested>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param194</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
-                <name>Enabled45</name>
-                <uuid>40c16f4d-eccc-40a7-97cc-ca1f1a76a609</uuid>
-                <value>true</value>
-                <defaultValue>true</defaultValue>
-                <description>The state of the element</description>
-                <displayedName>Enabled45</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param195</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="enumParam">
-                <name>Trigger9</name>
-                <uuid>65b19f36-0603-4600-ad8b-0de114f63d1a</uuid>
-                <value xsi:type="trigger">Timer</value>
-                <defaultValue xsi:type="trigger">Timer</defaultValue>
-                <displayedName>Trigger9</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param212</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
-                <name>RandomStart</name>
-                <uuid>27c675ff-cb6d-4760-9cf6-82ace2972c13</uuid>
-                <value>false</value>
-                <defaultValue>false</defaultValue>
-                <description>True if this asynchronous sequence should perform a random start.</description>
-                <displayedName>Random start</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param213</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
-                <name>Async_90_enable</name>
-                <uuid>0a0c118f-c8b9-4e54-bdd8-0b30c2c4007c</uuid>
-                <value>true</value>
-                <defaultValue>false</defaultValue>
-                <description>Define whether a pattern-specific 90° pulse width should be used.</description>
-                <displayedName>Enable 90° width</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param214</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
-                <name>Async_90_width</name>
-                <uuid>018aa84c-c7ef-486e-a3fc-587d4e9d6521</uuid>
-                <value>4.9999999999999996E-6</value>
-                <defaultValue>0.0</defaultValue>
-                <description></description>
-                <displayedName>Specific 90° width</displayedName>
-                <locked>true</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <restrictedToSuggested>false</restrictedToSuggested>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <group>Emission</group>
             </value>
         </Entry>
         <Entry>
@@ -3630,7 +3411,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>2</count>
+            <count>1</count>
             <key>param231</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>Name46</name>
@@ -3645,7 +3426,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>2</count>
+            <count>1</count>
             <key>param232</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
                 <name>Enabled46</name>
@@ -3659,7 +3440,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>2</count>
+            <count>1</count>
             <key>param233</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="enumParam">
                 <name>Trigger10</name>
@@ -3672,7 +3453,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>2</count>
+            <count>1</count>
             <key>param234</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>Name47</name>
@@ -3687,7 +3468,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>2</count>
+            <count>1</count>
             <key>param235</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
                 <name>Enabled47</name>
@@ -3701,7 +3482,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>3</count>
+            <count>2</count>
             <key>param236</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>Tx_shape_name3</name>
@@ -3713,85 +3494,6 @@
                 <locked>false</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param237</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
-                <name>r_name</name>
-                <uuid>0016dfa6-b81e-48af-a163-358ef89b673b</uuid>
-                <value>r</value>
-                <defaultValue></defaultValue>
-                <description>Name of the pulse</description>
-                <displayedName>r_name</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <restrictedToSuggested>false</restrictedToSuggested>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param238</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="enumParam">
-                <name>r_type</name>
-                <uuid>1ebaadee-21e2-425f-9739-c2d35437e811</uuid>
-                <value xsi:type="pulseType">HARD</value>
-                <defaultValue xsi:type="pulseType">HARD</defaultValue>
-                <displayedName>r_type</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param239</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>r_angle</name>
-                <uuid>3785a6c2-ad30-4c94-96a0-7e73dc7a783e</uuid>
-                <value>90.0</value>
-                <defaultValue>90.0</defaultValue>
-                <displayedName>r_angle</displayedName>
-                <locked>true</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>PulseAngle</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.7976931348623157E308</maxValue>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param240</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>r_power</name>
-                <uuid>5231a8f3-37f2-42e6-8121-f6982221b41b</uuid>
-                <value>0.0</value>
-                <defaultValue>30.0</defaultValue>
-                <displayedName>r_power</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Power</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>10000.0</maxValue>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
-            <key>param243</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>r_width</name>
-                <uuid>1c5228df-fd26-4185-b11e-79c02ff10a37</uuid>
-                <value>4.9999999999999996E-6</value>
-                <description></description>
-                <displayedName>r_width</displayedName>
-                <locked>true</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <order>One</order>
-                <group>Emission</group>
-                <category>Acquisition</category>
             </value>
         </Entry>
     </params>
@@ -3961,7 +3663,7 @@
                 <description></description>
                 <numberEnum>Time</numberEnum>
                 <order>One</order>
-                <locked>true</locked>
+                <locked>false</locked>
                 <address>-1</address>
                 <list>1.0E-5</list>
             </value>
@@ -4252,19 +3954,6 @@
         </Entry>
         <Entry>
             <count>1</count>
-            <key>table37</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
-                <name>Time9</name>
-                <description></description>
-                <numberEnum>Time</numberEnum>
-                <order>One</order>
-                <locked>false</locked>
-                <address>-1</address>
-                <list>1.0E-5</list>
-            </value>
-        </Entry>
-        <Entry>
-            <count>1</count>
             <key>table43</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
                 <name>Time14</name>
@@ -4367,7 +4056,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>2</count>
+            <count>1</count>
             <key>table53</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
                 <name>Time10</name>
@@ -4380,7 +4069,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>3</count>
+            <count>1</count>
             <key>table55</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="shape">
                 <name>Shape_phase4</name>
@@ -4392,7 +4081,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>2</count>
+            <count>1</count>
             <key>table57</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
                 <name>Frequency_offset4</name>
@@ -4405,7 +4094,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>2</count>
+            <count>1</count>
             <key>table58</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
                 <name>Tx_phase3</name>
@@ -4418,7 +4107,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>3</count>
+            <count>1</count>
             <key>table59</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
                 <name>r_amp2</name>
@@ -4431,7 +4120,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>3</count>
+            <count>1</count>
             <key>table60</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="shape">
                 <name>Tx_shape3</name>
@@ -4443,7 +4132,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>3</count>
+            <count>1</count>
             <key>table61</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
                 <name>r_att2</name>
@@ -4456,7 +4145,7 @@
             </value>
         </Entry>
         <Entry>
-            <count>2</count>
+            <count>1</count>
             <key>table62</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="phaseModTable">
                 <name>PhaseModTable5</name>
