@@ -47,7 +47,7 @@ public class TestSimple extends AutoSequenceGenerator {
     }
 
     public String getVersion() {
-        return "5";
+        return "2";
     }
     //</editor-fold>
 }
