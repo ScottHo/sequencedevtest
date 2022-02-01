@@ -4,7 +4,6 @@ package rs2d.sequence;
 
 import rs2d.spinlab.tools.param.*;
 import rs2d.spinlab.tools.table.*;
-import rs2d.spinlab.tools.role.RoleEnum;
 import rs2d.spinlab.sequenceGenerator.GeneratorParamEnum;
 
 import java.util.List;
@@ -19,7 +18,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Dimension on which averaging is performed by the Cameleon");
             param.setGroup(EnumGroup.Scan);
             param.setCategory(Category.Acquisition);
-            param.setUuid("d6a582b7-561c-4af7-adc6-ddace1771673");
+            param.setUuid("af6eb813-ea10-414b-94f3-7eb24389f372");
             param.setNumberEnum(NumberEnum.Integer);
             param.setMinValue(0);
             param.setMaxValue(3);
@@ -38,7 +37,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Scan);
             param.setCategory(Category.Acquisition);
-            param.setUuid("de23b72f-5898-49d4-848d-a5ce3e2f1295");
+            param.setUuid("3b9bbf8e-fb9f-4db8-a6ff-b7444cd49c61");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -57,7 +56,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Scan);
             param.setCategory(Category.Acquisition);
-            param.setUuid("62dec9a9-5d31-426d-8248-7135f396c146");
+            param.setUuid("c0486751-d6e7-468f-a525-473d62e42f56");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -76,7 +75,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Scan);
             param.setCategory(Category.Acquisition);
-            param.setUuid("69317341-5eb7-4652-8393-fb439f94270c");
+            param.setUuid("e5d4c8c7-0c18-4743-9331-3300db9fab66");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -95,7 +94,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Scan);
             param.setCategory(Category.Acquisition);
-            param.setUuid("a4e53c1d-5a1d-4795-b2eb-6201ef0fb9e4");
+            param.setUuid("15cf1259-5a93-4568-aef0-e8c6ec4dc914");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -113,7 +112,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Acquisition);
-            param.setUuid("33ce82c2-ccf9-4634-bcee-62ae4cf86179");
+            param.setUuid("3e5d02ae-5a98-4e6b-beab-0b3a19ff2825");
             param.setValue(asList("COMPLEX", "REAL", "REAL", "REAL"));
             param.setDefaultValue(asList("COMPLEX", "REAL", "REAL", "REAL"));
             return param;
@@ -128,12 +127,31 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Sampling time duration, ADC time");
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("fac4927f-d653-4332-a413-752c93a1ae24");
+            param.setUuid("670b3a6d-a4f2-49f1-9c12-106be741d137");
             param.setNumberEnum(NumberEnum.Time);
             param.setMinValue(0.0);
             param.setMaxValue(1.0E9);
             param.setValue(1.0);
             param.setDefaultValue(1.0);
+            return param;
+        }
+    },
+
+    Async_90_width("Async_90_width") {
+        public Param build() {
+            NumberParam param = new NumberParam();
+            param.setName("Async_90_width");
+            param.setDisplayedName("Specific 90° width");
+            param.setDescription("");
+            param.setLocked(true);
+            param.setGroup(EnumGroup.Emission);
+            param.setCategory(Category.Acquisition);
+            param.setUuid("018aa84c-c7ef-486e-a3fc-587d4e9d6521");
+            param.setNumberEnum(NumberEnum.Time);
+            param.setMinValue(0.0);
+            param.setMaxValue(1.0E9);
+            param.setValue(4.9999999999999996E-6);
+            param.setDefaultValue(0.0);
             return param;
         }
     },
@@ -147,7 +165,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("7dd550c9-6627-42c0-88b5-cdf9bad8fa1d");
+            param.setUuid("f0ef9625-a663-474a-b3b3-9c8784a84c51");
             param.setNumberEnum(NumberEnum.Frequency);
             param.setMinValue(0.0);
             param.setMaxValue(3.0E9);
@@ -166,7 +184,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("9f46a86f-d1af-4c56-bc78-87eef14cf0c9");
+            param.setUuid("3b242283-c4dd-43c7-bbcd-824e12526299");
             param.setNumberEnum(NumberEnum.Frequency);
             param.setMinValue(0.0);
             param.setMaxValue(3.0E9);
@@ -185,7 +203,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("2436ca74-ddc0-4231-a4f5-d8573eb5dacd");
+            param.setUuid("b1b6fe4e-7684-4206-98cb-84b2600d5104");
             param.setNumberEnum(NumberEnum.Frequency);
             param.setMinValue(0.0);
             param.setMaxValue(3.0E9);
@@ -204,7 +222,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("3812ba82-ac62-467c-86a1-e1f9d08d21dd");
+            param.setUuid("02340b1b-db11-4103-9b90-2c93bb81480e");
             param.setNumberEnum(NumberEnum.Frequency);
             param.setMinValue(0.0);
             param.setMaxValue(3.0E9);
@@ -222,7 +240,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Dimension);
             param.setCategory(Category.Miscellaneous);
-            param.setUuid("c2b13fc5-a3e1-4a3f-8802-7d4dd9e4ede9");
+            param.setUuid("e307e8ef-2e0c-4f24-bf9d-707d41f8dd58");
             param.setValue(asList("COMPLEX", "REAL", "REAL", "REAL"));
             param.setDefaultValue(asList("COMPLEX", "REAL", "REAL", "REAL"));
             return param;
@@ -238,7 +256,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("32b80999-61d9-4187-b1e4-bd6a8f33a866");
+            param.setUuid("14b0c743-869e-4623-931d-e1f3b6e76d68");
             param.setValue(true);
             param.setDefaultValue(true);
             return param;
@@ -254,7 +272,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("7f838b3d-4b22-4446-b152-4776f743f411");
+            param.setUuid("4a9241f6-31f1-4d38-bd9e-06bcdd33b45a");
             param.setNumberEnum(NumberEnum.Integer);
             param.setMinValue(-2147483648);
             param.setMaxValue(2147483647);
@@ -272,7 +290,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Dummy Scan performed at the beginning of the acquisition");
             param.setGroup(EnumGroup.Scan);
             param.setCategory(Category.Acquisition);
-            param.setUuid("09bd431f-cb48-4fd7-bfb7-06737aaf2de4");
+            param.setUuid("c69f052a-4e91-4f49-bb13-b56fa1250f62");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -290,7 +308,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Reception dwell time");
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("71951c53-c5e7-4e7c-988b-853a99b65f8c");
+            param.setUuid("f63eb562-aed3-4684-a428-9b134ad1e385");
             param.setNumberEnum(NumberEnum.Time);
             param.setMinValue(0.0);
             param.setMaxValue(1.0E9);
@@ -309,7 +327,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("902e4f33-d731-4cf9-b33c-274471ffa95c");
+            param.setUuid("a849ba6c-fd23-49a1-8779-63161f18b61c");
             param.setNumberEnum(NumberEnum.FidRes);
             param.setMinValue(0.0);
             param.setMaxValue(1.7976931348623157E308);
@@ -328,7 +346,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("f405ee21-9e97-46ba-89ed-611a72a403d7");
+            param.setUuid("6df76c57-da75-44fe-ac67-7abc8dd52e22");
             param.setNumberEnum(NumberEnum.FidRes);
             param.setMinValue(0.0);
             param.setMaxValue(1.7976931348623157E308);
@@ -347,7 +365,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("51cec751-e738-4eb7-b267-3995848e0abc");
+            param.setUuid("e10a3c19-0525-4684-bf06-00b480637681");
             param.setNumberEnum(NumberEnum.Frequency);
             param.setMinValue(0.0);
             param.setMaxValue(3.0E9);
@@ -366,7 +384,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("3dca1a19-e232-4374-bd48-8f64b2d47d2e");
+            param.setUuid("63990f3e-36b3-4271-825e-3f90ba7d871f");
             param.setMinValue(-2147483648);
             param.setMaxValue(2147483647);
             param.setNumberEnum(NumberEnum.Integer);
@@ -384,7 +402,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Acquisition lock status");
             param.setLocked(true);
             param.setCategory(Category.Miscellaneous);
-            param.setUuid("8173dfd7-f65e-4d45-a585-1ee7379349e0");
+            param.setUuid("1d470fc0-2df1-4f9f-9873-11929fdeb0b4");
             param.setValue(false);
             param.setDefaultValue(false);
             return param;
@@ -400,7 +418,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Acquisition);
-            param.setUuid("20b0dcb3-b66a-4b6a-8345-8f52d81a46b8");
+            param.setUuid("1a17241b-1a9b-4a65-be1a-117942e073df");
             param.setNumberEnum(NumberEnum.Integer);
             param.setMinValue(-2147483648);
             param.setMaxValue(2147483647);
@@ -419,7 +437,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Miscellaneous);
-            param.setUuid("60dffb90-8e34-41c9-b650-d151ba00f7a6");
+            param.setUuid("b98595c2-3e43-41ee-8b4d-d94f607f4d55");
             param.setValue("RS2D");
             param.setDefaultValue("RS2D");
             return param;
@@ -434,7 +452,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Acquisition modality: MRI, NMR...");
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Acquisition);
-            param.setUuid("f1e8dc1b-1f1b-4832-aa22-6b861ffdfe7e");
+            param.setUuid("f17ac2a9-9a3b-4c85-9ad2-a7772c04380f");
             param.setValue("NMR");
             param.setDefaultValue("NMR");
             param.setSuggestedValues(asList("NMR", "MRI", "PET", "DEFAULT"));
@@ -452,7 +470,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Miscellaneous);
-            param.setUuid("71176efa-5e9e-444d-ad29-830e883caab9");
+            param.setUuid("76a3ccbb-4bdd-4b2e-840a-eef0807f539d");
             param.setValue("");
             param.setDefaultValue("");
             return param;
@@ -468,7 +486,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Acquisition);
-            param.setUuid("1b4031c5-c8c2-4285-85fb-f636af23add1");
+            param.setUuid("f9f0a41e-8ac1-4512-9e00-c7b78450b9eb");
             param.setValue("1H");
             param.setDefaultValue("1H");
             param.setSuggestedValues(asList("Y", "Other", "X", "1H", "2H", "3H", "3He", "6Li", "7Li", "9Be", "10B", "11B", "13C", "14N", "15N", "17O", "19F", "21Ne", "23Na", "25Mg", "27Al", "29Si", "31P", "33S", "35Cl", "37Cl", "39K", "40K", "41K", "43Ca", "45Sc", "47Ti", "49Ti", "50V", "51V", "53Cr", "55Mn", "57Fe", "59Co", "61Ni", "63Cu", "65Cu", "67Zn", "69Ga", "71Ga", "73Ge", "75As", "77Se", "79Br", "81Br", "83Kr", "85Rb", "87Rb", "87Sr", "89Y", "91Zr", "93Nb", "95Mo", "97Mo", "99Tc", "99Ru", "101Ru", "103Rh", "105Pd", "107Ag", "109Ag", "111Cd", "113Cd", "113In", "115Sn", "115In", "117Sn", "119Sn", "121Sb", "123Te", "123Sb", "125Te", "127I", "129Xe", "131Xe", "133Cs", "135Ba", "137Ba", "138La", "139La", "141Pr", "143Nd", "145Nd", "147Sm", "149Sm", "151Eu", "153Eu", "155Gd", "157Gd", "159Tb", "161Dy", "163Dy", "165Ho", "167Er", "169Tm", "171Yb", "173Yb", "175Lu", "176Lu", "177Hf", "179Hf", "181Ta", "183W", "185Re", "187Re", "187Os", "189Os", "191Ir", "193Ir", "195Pt", "197Au", "199Hg", "201Hg", "203Tl", "205Tl", "207Pb", "209Bi", "235U"));
@@ -486,7 +504,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Acquisition);
-            param.setUuid("85a37bb8-9bdd-4008-866a-5e66ef5659ef");
+            param.setUuid("0a7b6a77-7670-4c00-a5c8-935497608772");
             param.setValue("1H");
             param.setDefaultValue("1H");
             param.setSuggestedValues(asList("Y", "Other", "X", "1H", "2H", "3H", "3He", "6Li", "7Li", "9Be", "10B", "11B", "13C", "14N", "15N", "17O", "19F", "21Ne", "23Na", "25Mg", "27Al", "29Si", "31P", "33S", "35Cl", "37Cl", "39K", "40K", "41K", "43Ca", "45Sc", "47Ti", "49Ti", "50V", "51V", "53Cr", "55Mn", "57Fe", "59Co", "61Ni", "63Cu", "65Cu", "67Zn", "69Ga", "71Ga", "73Ge", "75As", "77Se", "79Br", "81Br", "83Kr", "85Rb", "87Rb", "87Sr", "89Y", "91Zr", "93Nb", "95Mo", "97Mo", "99Tc", "99Ru", "101Ru", "103Rh", "105Pd", "107Ag", "109Ag", "111Cd", "113Cd", "113In", "115Sn", "115In", "117Sn", "119Sn", "121Sb", "123Te", "123Sb", "125Te", "127I", "129Xe", "131Xe", "133Cs", "135Ba", "137Ba", "138La", "139La", "141Pr", "143Nd", "145Nd", "147Sm", "149Sm", "151Eu", "153Eu", "155Gd", "157Gd", "159Tb", "161Dy", "163Dy", "165Ho", "167Er", "169Tm", "171Yb", "173Yb", "175Lu", "176Lu", "177Hf", "179Hf", "181Ta", "183W", "185Re", "187Re", "187Os", "189Os", "191Ir", "193Ir", "195Pt", "197Au", "199Hg", "201Hg", "203Tl", "205Tl", "207Pb", "209Bi", "235U"));
@@ -504,7 +522,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Acquisition);
-            param.setUuid("8fa8929e-2ec8-4865-a9e2-1762b0e26572");
+            param.setUuid("d2743ab6-99bc-4a2b-8625-3fb496b38b8a");
             param.setValue("1H");
             param.setDefaultValue("1H");
             param.setSuggestedValues(asList("Y", "Other", "X", "1H", "2H", "3H", "3He", "6Li", "7Li", "9Be", "10B", "11B", "13C", "14N", "15N", "17O", "19F", "21Ne", "23Na", "25Mg", "27Al", "29Si", "31P", "33S", "35Cl", "37Cl", "39K", "40K", "41K", "43Ca", "45Sc", "47Ti", "49Ti", "50V", "51V", "53Cr", "55Mn", "57Fe", "59Co", "61Ni", "63Cu", "65Cu", "67Zn", "69Ga", "71Ga", "73Ge", "75As", "77Se", "79Br", "81Br", "83Kr", "85Rb", "87Rb", "87Sr", "89Y", "91Zr", "93Nb", "95Mo", "97Mo", "99Tc", "99Ru", "101Ru", "103Rh", "105Pd", "107Ag", "109Ag", "111Cd", "113Cd", "113In", "115Sn", "115In", "117Sn", "119Sn", "121Sb", "123Te", "123Sb", "125Te", "127I", "129Xe", "131Xe", "133Cs", "135Ba", "137Ba", "138La", "139La", "141Pr", "143Nd", "145Nd", "147Sm", "149Sm", "151Eu", "153Eu", "155Gd", "157Gd", "159Tb", "161Dy", "163Dy", "165Ho", "167Er", "169Tm", "171Yb", "173Yb", "175Lu", "176Lu", "177Hf", "179Hf", "181Ta", "183W", "185Re", "187Re", "187Os", "189Os", "191Ir", "193Ir", "195Pt", "197Au", "199Hg", "201Hg", "203Tl", "205Tl", "207Pb", "209Bi", "235U"));
@@ -522,7 +540,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Acquisition);
-            param.setUuid("244be64f-67ed-4d1a-812d-6a9448a9a2a0");
+            param.setUuid("917e4623-c216-4886-b142-64b201d6aa01");
             param.setValue("1H");
             param.setDefaultValue("1H");
             param.setSuggestedValues(asList("Y", "Other", "X", "1H", "2H", "3H", "3He", "6Li", "7Li", "9Be", "10B", "11B", "13C", "14N", "15N", "17O", "19F", "21Ne", "23Na", "25Mg", "27Al", "29Si", "31P", "33S", "35Cl", "37Cl", "39K", "40K", "41K", "43Ca", "45Sc", "47Ti", "49Ti", "50V", "51V", "53Cr", "55Mn", "57Fe", "59Co", "61Ni", "63Cu", "65Cu", "67Zn", "69Ga", "71Ga", "73Ge", "75As", "77Se", "79Br", "81Br", "83Kr", "85Rb", "87Rb", "87Sr", "89Y", "91Zr", "93Nb", "95Mo", "97Mo", "99Tc", "99Ru", "101Ru", "103Rh", "105Pd", "107Ag", "109Ag", "111Cd", "113Cd", "113In", "115Sn", "115In", "117Sn", "119Sn", "121Sb", "123Te", "123Sb", "125Te", "127I", "129Xe", "131Xe", "133Cs", "135Ba", "137Ba", "138La", "139La", "141Pr", "143Nd", "145Nd", "147Sm", "149Sm", "151Eu", "153Eu", "155Gd", "157Gd", "159Tb", "161Dy", "163Dy", "165Ho", "167Er", "169Tm", "171Yb", "173Yb", "175Lu", "176Lu", "177Hf", "179Hf", "181Ta", "183W", "185Re", "187Re", "187Os", "189Os", "191Ir", "193Ir", "195Pt", "197Au", "199Hg", "201Hg", "203Tl", "205Tl", "207Pb", "209Bi", "235U"));
@@ -539,7 +557,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Number of average");
             param.setGroup(EnumGroup.Scan);
             param.setCategory(Category.Acquisition);
-            param.setUuid("fc7b377f-e0c8-473b-9b09-f1505cafe978");
+            param.setUuid("c2d47d1b-bec1-4b4f-a10e-973c9477fb52");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -556,7 +574,7 @@ public enum U implements GeneratorParamEnum {
             param.setDisplayedName("Nb_2d");
             param.setGroup(EnumGroup.Dimension);
             param.setCategory(Category.Acquisition);
-            param.setUuid("010ee8ad-0951-4e3f-9d6e-522ecd2c91d0");
+            param.setUuid("734763b7-96a3-425d-b619-2caec6116360");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -573,7 +591,7 @@ public enum U implements GeneratorParamEnum {
             param.setDisplayedName("Nb_3d");
             param.setGroup(EnumGroup.Dimension);
             param.setCategory(Category.Acquisition);
-            param.setUuid("1fc6d7ee-16ee-43e5-91f3-e69bf89bee58");
+            param.setUuid("33033964-2009-4f7f-95b4-39dd8b44552f");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -590,7 +608,7 @@ public enum U implements GeneratorParamEnum {
             param.setDisplayedName("Nb_4d");
             param.setGroup(EnumGroup.Dimension);
             param.setCategory(Category.Acquisition);
-            param.setUuid("44c258fb-f8b2-4c8d-a5b3-91577ede67d9");
+            param.setUuid("4f3b455c-006e-44d3-b7a1-beeff3704019");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -608,7 +626,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Frequency of the acquisition");
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("f53e22e3-f827-448e-9b97-87ec73019a9e");
+            param.setUuid("189cd3b0-e524-49fd-922d-8e73a95170c9");
             param.setNumberEnum(NumberEnum.Frequency);
             param.setMinValue(0.0);
             param.setMaxValue(3.0E9);
@@ -626,7 +644,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Observed nucleus");
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("40433781-bd82-4ba6-be4e-c878617e0376");
+            param.setUuid("0ffc9cb5-ba62-418c-9ebc-06f0353cb5ad");
             param.setValue("1H");
             param.setDefaultValue("1H");
             param.setSuggestedValues(asList("Y", "Other", "X", "1H", "2H", "3H", "3He", "6Li", "7Li", "9Be", "10B", "11B", "13C", "14N", "15N", "17O", "19F", "21Ne", "23Na", "25Mg", "27Al", "29Si", "31P", "33S", "35Cl", "37Cl", "39K", "40K", "41K", "43Ca", "45Sc", "47Ti", "49Ti", "50V", "51V", "53Cr", "55Mn", "57Fe", "59Co", "61Ni", "63Cu", "65Cu", "67Zn", "69Ga", "71Ga", "73Ge", "75As", "77Se", "79Br", "81Br", "83Kr", "85Rb", "87Rb", "87Sr", "89Y", "91Zr", "93Nb", "95Mo", "97Mo", "99Tc", "99Ru", "101Ru", "103Rh", "105Pd", "107Ag", "109Ag", "111Cd", "113Cd", "113In", "115Sn", "115In", "117Sn", "119Sn", "121Sb", "123Te", "123Sb", "125Te", "127I", "129Xe", "131Xe", "133Cs", "135Ba", "137Ba", "138La", "139La", "141Pr", "143Nd", "145Nd", "147Sm", "149Sm", "151Eu", "153Eu", "155Gd", "157Gd", "159Tb", "161Dy", "163Dy", "165Ho", "167Er", "169Tm", "171Yb", "173Yb", "175Lu", "176Lu", "177Hf", "179Hf", "181Ta", "183W", "185Re", "187Re", "187Os", "189Os", "191Ir", "193Ir", "195Pt", "197Au", "199Hg", "201Hg", "203Tl", "205Tl", "207Pb", "209Bi", "235U"));
@@ -643,14 +661,14 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Offset frequency of the first sequence channel");
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("6f698774-e5a3-400c-a3ba-5f1fe9a8e3ba");
+            param.setUuid("9f5dde6b-abc6-4061-9ca6-4e5e60b94184");
             param.setNumberEnum(NumberEnum.FrequencyOffset);
             param.setMinValue(-1.5E9);
             param.setMaxValue(1.5E9);
             param.setValue(0.0);
             param.setDefaultValue(0.0);
             param.setInitialNumberEnum(NumberEnum.FrequencyOffset);
-            param.setUuidBaseFrequency("7dd550c9-6627-42c0-88b5-cdf9bad8fa1d");
+            param.setUuidBaseFrequency("f0ef9625-a663-474a-b3b3-9c8784a84c51");
             return param;
         }
     },
@@ -663,14 +681,14 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Offset frequency of the second sequence channel");
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("81c3dd52-0713-40ca-b8e8-732c4b09f10e");
+            param.setUuid("4c520aaa-9dca-42bf-9e9d-adffda208662");
             param.setNumberEnum(NumberEnum.FrequencyOffset);
             param.setMinValue(-1.5E9);
             param.setMaxValue(1.5E9);
             param.setValue(0.0);
             param.setDefaultValue(0.0);
             param.setInitialNumberEnum(NumberEnum.FrequencyOffset);
-            param.setUuidBaseFrequency("9f46a86f-d1af-4c56-bc78-87eef14cf0c9");
+            param.setUuidBaseFrequency("3b242283-c4dd-43c7-bbcd-824e12526299");
             return param;
         }
     },
@@ -683,14 +701,14 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Offset frequency of the third sequence channel");
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("c91a2987-5ad3-49cb-a421-82c721151940");
+            param.setUuid("383bde66-77a0-4d9f-b8c7-7d9f566efa7f");
             param.setNumberEnum(NumberEnum.FrequencyOffset);
             param.setMinValue(-1.5E9);
             param.setMaxValue(1.5E9);
             param.setValue(0.0);
             param.setDefaultValue(0.0);
             param.setInitialNumberEnum(NumberEnum.FrequencyOffset);
-            param.setUuidBaseFrequency("2436ca74-ddc0-4231-a4f5-d8573eb5dacd");
+            param.setUuidBaseFrequency("b1b6fe4e-7684-4206-98cb-84b2600d5104");
             return param;
         }
     },
@@ -703,68 +721,14 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Offset frequency of the fourth sequence channel");
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("b0435c86-0766-48fa-b9ee-0a6a3bec781e");
+            param.setUuid("775b66e5-4ae4-4d3c-a8e0-bb607c65ae64");
             param.setNumberEnum(NumberEnum.FrequencyOffset);
             param.setMinValue(-1.5E9);
             param.setMaxValue(1.5E9);
             param.setValue(0.0);
             param.setDefaultValue(0.0);
             param.setInitialNumberEnum(NumberEnum.FrequencyOffset);
-            param.setUuidBaseFrequency("3812ba82-ac62-467c-86a1-e1f9d08d21dd");
-            return param;
-        }
-    },
-
-    P2_width("P2_width") {
-        public Param build() {
-            ListNumberParam param = new ListNumberParam();
-            param.setName("P2_width");
-            param.setDisplayedName("P2_width");
-            param.setDescription("");
-            param.setGroup(EnumGroup.Emission);
-            param.setCategory(Category.Acquisition);
-            param.setUuid("4b470191-308b-447d-96c0-810509226069");
-            param.setMinValue(0.0);
-            param.setMaxValue(1.0E9);
-            param.setNumberEnum(NumberEnum.Time);
-            param.setOrder(Order.One);
-            param.setValue(asListNumber(9.999999999999999E-6));
-            return param;
-        }
-    },
-
-    P3_width("P3_width") {
-        public Param build() {
-            ListNumberParam param = new ListNumberParam();
-            param.setName("P3_width");
-            param.setDisplayedName("P3_width");
-            param.setDescription("");
-            param.setGroup(EnumGroup.Emission);
-            param.setCategory(Category.Acquisition);
-            param.setUuid("b3a872a1-35b1-4aeb-94da-c4fb35de17ad");
-            param.setMinValue(0.0);
-            param.setMaxValue(1.0E9);
-            param.setNumberEnum(NumberEnum.Time);
-            param.setOrder(Order.One);
-            param.setValue(asListNumber(9.999999999999999E-6));
-            return param;
-        }
-    },
-
-    P4_width("P4_width") {
-        public Param build() {
-            ListNumberParam param = new ListNumberParam();
-            param.setName("P4_width");
-            param.setDisplayedName("P4_width");
-            param.setDescription("");
-            param.setGroup(EnumGroup.Emission);
-            param.setCategory(Category.Acquisition);
-            param.setUuid("4cc1e78f-fd42-48d5-8ba5-d828c0a80f4d");
-            param.setMinValue(0.0);
-            param.setMaxValue(1.0E9);
-            param.setNumberEnum(NumberEnum.Time);
-            param.setOrder(Order.One);
-            param.setValue(asListNumber(9.999999999999999E-6));
+            param.setUuidBaseFrequency("02340b1b-db11-4103-9b90-2c93bb81480e");
             return param;
         }
     },
@@ -777,7 +741,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Name of the current optimised parameter");
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Acquisition);
-            param.setUuid("6e11adeb-c306-4039-a652-61d418f91fcb");
+            param.setUuid("2ee1475e-585c-47ba-97e6-c3e8c48edac3");
             param.setValue("PULSE_LENGTH");
             param.setDefaultValue("PULSE_LENGTH");
             return param;
@@ -793,7 +757,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Process);
-            param.setUuid("14148d91-8a9d-4cc7-9c67-0ddd33a05fc2");
+            param.setUuid("ab693451-a49f-4eff-b8dc-d5c1b27244f0");
             param.setMinValue(-1.7976931348623157E308);
             param.setMaxValue(1.7976931348623157E308);
             param.setNumberEnum(NumberEnum.Double);
@@ -812,7 +776,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Process);
-            param.setUuid("fb42d88a-e481-4273-9d14-95622447db18");
+            param.setUuid("2305e65f-fa4f-4d71-9bdc-79d7047a2dfd");
             param.setMinValue(-1.7976931348623157E308);
             param.setMaxValue(1.7976931348623157E308);
             param.setNumberEnum(NumberEnum.Double);
@@ -831,7 +795,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Process);
-            param.setUuid("49d8f88f-ada2-47f6-bf19-e6c7836d8976");
+            param.setUuid("353cb6c8-ecdc-4a5b-8ebe-49e83335b3d7");
             param.setValue(false);
             param.setDefaultValue(false);
             return param;
@@ -847,7 +811,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Process);
-            param.setUuid("b84cd04f-19f4-4ca5-b0bb-f8f3bd4c51ad");
+            param.setUuid("7eb28d62-86e7-40b3-85cd-074d7555e0aa");
             param.setValue(asList("NONE", "NONE", "NONE", "NONE"));
             param.setDefaultValue(asList("NONE", "NONE", "NONE", "NONE"));
             return param;
@@ -863,7 +827,24 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Acquisition);
-            param.setUuid("119a7cac-812d-4b45-ab10-fb8b6a27e8e2");
+            param.setUuid("a5437132-bb57-49d4-87a0-03fbf8062f72");
+            return param;
+        }
+    },
+
+    PatternDuration("PatternDuration") {
+        public Param build() {
+            NumberParam param = new NumberParam();
+            param.setName("PatternDuration");
+            param.setDisplayedName("PatternDuration");
+            param.setGroup(EnumGroup.User);
+            param.setCategory(Category.Acquisition);
+            param.setUuid("f2e6878b-b4c7-4d83-a329-d11dfed4735f");
+            param.setNumberEnum(NumberEnum.Time);
+            param.setMinValue(0.0);
+            param.setMaxValue(1.0E9);
+            param.setValue(1.9999999999999998E-5);
+            param.setDefaultValue(0.0);
             return param;
         }
     },
@@ -876,7 +857,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("PreScan");
             param.setGroup(EnumGroup.Dimension);
             param.setCategory(Category.Acquisition);
-            param.setUuid("c2f23bbd-bbbe-413f-b37a-18079af2f265");
+            param.setUuid("20389f1e-bd82-4a68-b854-ebefa8be8321");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -894,7 +875,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Number of receivers channel");
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("c5382703-9ad2-435e-9c18-e73e5805dcfd");
+            param.setUuid("8d2be2b7-c84b-426d-9803-185ed169518d");
             param.setNumberEnum(NumberEnum.Integer);
             param.setMinValue(1);
             param.setMaxValue(32);
@@ -912,7 +893,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Receiver gain");
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("cc235194-1e6f-4f89-a5bf-80ee24f020d3");
+            param.setUuid("bacd66ae-f756-4147-a813-f1052b1d05b8");
             param.setMinValue(0.0);
             param.setMaxValue(120.0);
             param.setNumberEnum(NumberEnum.RxGain);
@@ -930,7 +911,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("SAMPLE_TEMPERATURE.description");
             param.setGroup(EnumGroup.Sample);
             param.setCategory(Category.Acquisition);
-            param.setUuid("dba28ca3-3b7f-400e-9ad0-4c18ca8caa57");
+            param.setUuid("5443a857-be6b-4019-b09b-393071070005");
             param.setNumberEnum(NumberEnum.Temperature);
             param.setMinValue(0.0);
             param.setMaxValue(700.0);
@@ -950,7 +931,7 @@ public enum U implements GeneratorParamEnum {
             param.setLockedToDefault(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Acquisition);
-            param.setUuid("7a88b1c6-96f3-4919-833b-e88d662d72bc");
+            param.setUuid("db0e13df-c47b-4715-9620-891afcb0a2ea");
             param.setValue("test_simple");
             param.setDefaultValue("test_simple");
             return param;
@@ -966,7 +947,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Acquisition);
-            param.setUuid("4c66b75c-4b17-4f1b-a972-3ef46f38f16f");
+            param.setUuid("f37da408-7c16-4f9e-82cc-203ebdc01d10");
             param.setValue(false);
             param.setDefaultValue(false);
             return param;
@@ -982,7 +963,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Miscellaneous);
-            param.setUuid("efbdb94f-6310-407d-9e29-c6f81df18904");
+            param.setUuid("dd3cde21-ba3b-4e87-8272-028fb45d76fd");
             param.setValue("");
             param.setDefaultValue("");
             return param;
@@ -998,7 +979,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Sample);
             param.setCategory(Category.Miscellaneous);
-            param.setUuid("c3cf0e92-b39c-4289-8f91-0d45afdf2655");
+            param.setUuid("6813f2d9-a659-49ab-9c07-9a902e142bd3");
             param.setValue("CDCl3");
             param.setDefaultValue("CDCl3");
             return param;
@@ -1013,14 +994,14 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Reception bandwidth");
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("9ca5227a-b1ea-4069-a5ee-dbd02237df34");
+            param.setUuid("6db216d8-2565-4d81-89af-6907244e4c24");
             param.setNumberEnum(NumberEnum.SW);
             param.setMinValue(0.0);
             param.setMaxValue(1.0E8);
             param.setValue(12500.0);
             param.setDefaultValue(12500.0);
             param.setInitialNumberEnum(NumberEnum.SW);
-            param.setUuidBaseFrequency("f53e22e3-f827-448e-9b97-87ec73019a9e");
+            param.setUuidBaseFrequency("189cd3b0-e524-49fd-922d-8e73a95170c9");
             return param;
         }
     },
@@ -1034,14 +1015,35 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("8d027767-a22d-41f2-8518-2d1278ee4c2e");
+            param.setUuid("aa800133-fa32-4b59-93f2-8e33053c7ce9");
             param.setNumberEnum(NumberEnum.SW);
             param.setMinValue(0.0);
             param.setMaxValue(1.0E8);
             param.setValue(12500.0);
             param.setDefaultValue(12500.0);
             param.setInitialNumberEnum(NumberEnum.SW);
-            param.setUuidBaseFrequency("480eb958-50e0-4840-8690-06a6508ad7e1");
+            param.setUuidBaseFrequency("5ae208f3-2495-4ae7-a03b-d0ceb1e36a58");
+            return param;
+        }
+    },
+
+    SPECTRAL_WIDTH_3D("SPECTRAL_WIDTH_3D") {
+        public Param build() {
+            HzPpmNumberParam param = new HzPpmNumberParam();
+            param.setName("SPECTRAL_WIDTH_3D");
+            param.setDisplayedName("SW 3D");
+            param.setDescription("Spectral width in the third dimension");
+            param.setLocked(true);
+            param.setGroup(EnumGroup.Reception);
+            param.setCategory(Category.Acquisition);
+            param.setUuid("5fab86a4-d9ef-4534-afde-620f773ee3b7");
+            param.setNumberEnum(NumberEnum.SW);
+            param.setMinValue(0.0);
+            param.setMaxValue(1.0E8);
+            param.setValue(12500.0);
+            param.setDefaultValue(12500.0);
+            param.setInitialNumberEnum(NumberEnum.SW);
+            param.setUuidBaseFrequency("189cd3b0-e524-49fd-922d-8e73a95170c9");
             return param;
         }
     },
@@ -1054,7 +1056,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("SPIN_RATE.description");
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Acquisition);
-            param.setUuid("7528ed93-4606-4978-b2d2-5a0385633417");
+            param.setUuid("4fc1cf5f-b36c-49d1-8fae-4eb2f13ceec5");
             param.setNumberEnum(NumberEnum.Integer);
             param.setMinValue(-2147483648);
             param.setMaxValue(2147483647);
@@ -1073,14 +1075,14 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Reception);
             param.setCategory(Category.Acquisition);
-            param.setUuid("dfbf883c-fdc6-4bbc-a692-26035d5a6588");
+            param.setUuid("0757c6fb-3e1b-40a1-8076-8ce85ac9536a");
             param.setMinValue(-1.5E9);
             param.setMaxValue(1.5E9);
             param.setNumberEnum(NumberEnum.FrequencyOffset);
             param.setValue(asListNumber(0.0, 0.0, 0.0, 0.0));
             param.setDefaultValue(asListNumber(0.0, 0.0, 0.0, 0.0));
             param.setInitialNumberEnum(NumberEnum.FrequencyOffset);
-            param.setUuidBaseFrequency("f53e22e3-f827-448e-9b97-87ec73019a9e");
+            param.setUuidBaseFrequency("189cd3b0-e524-49fd-922d-8e73a95170c9");
             return param;
         }
     },
@@ -1094,7 +1096,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Miscellaneous);
             param.setCategory(Category.Miscellaneous);
-            param.setUuid("f284f48c-aa98-4169-a23e-f08053e8212e");
+            param.setUuid("41652196-9081-45a5-9672-bf51599cd3ef");
             param.setValue("");
             param.setDefaultValue("");
             return param;
@@ -1109,7 +1111,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Plugin to reorder the sample into the dataset");
             param.setGroup(EnumGroup.Scan);
             param.setCategory(Category.Acquisition);
-            param.setUuid("68164ee9-89ed-47f6-a089-08b845f4ad20");
+            param.setUuid("13f01547-0a9a-44f5-9660-f19121d56fa0");
             param.setValue("none");
             param.setDefaultValue("none");
             param.setSuggestedValues(asList("Bordered2D", "Bordered2D_FSE", "Centered2D", "Centered2D_FSE", "Centered2D_FSERot", "Centered2DRot", "EchoAntiechoTransform", "MapShim3DTransform", "SEEPISequential", "Sequential", "Sequential2D", "Sequential2DInterleaved", "Sequential4D", "Sequential4D_Dummy2D", "Sequential4DBackAndForth", "Sequential4DCine"));
@@ -1126,7 +1128,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("9ca5a455-0ae9-4079-aeca-600ef627708f");
+            param.setUuid("5dd79b47-f2c4-43c0-b42c-eedec51c6705");
             param.setNumberEnum(NumberEnum.Frequency);
             param.setMinValue(0.0);
             param.setMaxValue(3.0E9);
@@ -1145,7 +1147,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("480eb958-50e0-4840-8690-06a6508ad7e1");
+            param.setUuid("5ae208f3-2495-4ae7-a03b-d0ceb1e36a58");
             param.setNumberEnum(NumberEnum.Frequency);
             param.setMinValue(0.0);
             param.setMaxValue(3.0E9);
@@ -1164,7 +1166,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("0ccb14c3-5f7d-4db2-ac00-3b90a4415d9e");
+            param.setUuid("ca5a3a92-dde4-42b0-9c16-192cf7c4dedd");
             param.setNumberEnum(NumberEnum.Frequency);
             param.setMinValue(0.0);
             param.setMaxValue(3.0E9);
@@ -1183,7 +1185,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("514489f2-7de6-419a-a3f2-a9ab10a902ba");
+            param.setUuid("d5728057-2c9e-4904-a303-93b5c600b598");
             param.setNumberEnum(NumberEnum.Frequency);
             param.setMinValue(0.0);
             param.setMaxValue(3.0E9);
@@ -1202,7 +1204,7 @@ public enum U implements GeneratorParamEnum {
             param.setLocked(true);
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("1186192f-dce6-4bf5-9666-44b50191ebf0");
+            param.setUuid("0ecf1b0a-e626-48d3-a145-a23a20b664b6");
             param.setMinValue(-2147483648);
             param.setMaxValue(2147483647);
             param.setNumberEnum(NumberEnum.Integer);
@@ -1218,11 +1220,11 @@ public enum U implements GeneratorParamEnum {
             param.setDisplayedName("Tx_att");
             param.setLocked(true);
             param.setCategory(Category.Acquisition);
-            param.setUuid("400eaaae-83ba-4a5c-91fb-27ae3aacc2a7");
+            param.setUuid("9ff52995-5cd9-42be-9207-373833fbc73d");
             param.setNumberEnum(NumberEnum.TxAtt);
             param.setMinValue(0.0);
             param.setMaxValue(63.0);
-            param.setValue(0.0);
+            param.setValue(30.0);
             param.setDefaultValue(30.0);
             return param;
         }
@@ -1236,7 +1238,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Matrix size (USER_MATRIX_DIMENSION_1D)");
             param.setGroup(EnumGroup.Scan);
             param.setCategory(Category.Acquisition);
-            param.setUuid("014c8d0a-01c1-4691-8936-8bf024df437b");
+            param.setUuid("a9a34a2b-ec59-43e9-a883-efcb26d52a61");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -1254,7 +1256,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Matrix size (USER_MATRIX_DIMENSION_2D)");
             param.setGroup(EnumGroup.Scan);
             param.setCategory(Category.Acquisition);
-            param.setUuid("40513cc9-b685-42c5-b683-1188594f1772");
+            param.setUuid("01765a1b-3034-4b91-bcc4-7585bce2e8c2");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -1272,7 +1274,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Matrix size (USER_MATRIX_DIMENSION_3D)");
             param.setGroup(EnumGroup.Scan);
             param.setCategory(Category.Acquisition);
-            param.setUuid("3264b4f6-7d48-4f00-8423-e2e086bd2c44");
+            param.setUuid("bf759e4b-2603-4711-8f23-4be746a0f8f8");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -1290,7 +1292,7 @@ public enum U implements GeneratorParamEnum {
             param.setDescription("Matrix size (USER_MATRIX_DIMENSION_4D)");
             param.setGroup(EnumGroup.Scan);
             param.setCategory(Category.Acquisition);
-            param.setUuid("9621435a-f869-4630-b5e7-460a25810ba3");
+            param.setUuid("6619c660-eec5-4bd6-bd85-20461c3a45b3");
             param.setNumberEnum(NumberEnum.Scan);
             param.setMinValue(0);
             param.setMaxValue(2147483647);
@@ -1300,176 +1302,32 @@ public enum U implements GeneratorParamEnum {
         }
     },
 
-    _width66("_width66") {
+    r_amp("r_amp") {
         public Param build() {
             ListNumberParam param = new ListNumberParam();
-            param.setName("_width66");
-            param.setDisplayedName("_width66");
-            param.setDescription("");
-            param.setGroup(EnumGroup.Emission);
-            param.setCategory(Category.Acquisition);
-            param.setUuid("ed362124-d39f-471b-86cd-07a1bec53aac");
-            param.setMinValue(0.0);
-            param.setMaxValue(1.0E9);
-            param.setNumberEnum(NumberEnum.Time);
-            param.setOrder(Order.One);
-            param.setValue(asListNumber(1.9574999999999998E-5));
-            return param;
-        }
-    },
-
-    _width67("_width67") {
-        public Param build() {
-            ListNumberParam param = new ListNumberParam();
-            param.setName("_width67");
-            param.setDisplayedName("_width67");
-            param.setDescription("");
-            param.setGroup(EnumGroup.Emission);
-            param.setCategory(Category.Acquisition);
-            param.setUuid("57576a10-d41e-4a3e-ab76-4e853b1a79ef");
-            param.setMinValue(0.0);
-            param.setMaxValue(1.0E9);
-            param.setNumberEnum(NumberEnum.Time);
-            param.setOrder(Order.One);
-            param.setValue(asListNumber(1.305E-5));
-            return param;
-        }
-    },
-
-    _width68("_width68") {
-        public Param build() {
-            ListNumberParam param = new ListNumberParam();
-            param.setName("_width68");
-            param.setDisplayedName("_width68");
-            param.setDescription("");
-            param.setGroup(EnumGroup.Emission);
-            param.setCategory(Category.Acquisition);
-            param.setUuid("8aedc01b-d9e3-446f-92e3-f54090188404");
-            param.setMinValue(0.0);
-            param.setMaxValue(1.0E9);
-            param.setNumberEnum(NumberEnum.Time);
-            param.setOrder(Order.One);
-            param.setValue(asListNumber(2.609E-5));
-            return param;
-        }
-    },
-
-    _width69("_width69") {
-        public Param build() {
-            ListNumberParam param = new ListNumberParam();
-            param.setName("_width69");
-            param.setDisplayedName("_width69");
-            param.setDescription("");
-            param.setGroup(EnumGroup.Emission);
-            param.setCategory(Category.Acquisition);
-            param.setUuid("d840354a-90cd-4cd9-9bc5-50690855f849");
-            param.setMinValue(0.0);
-            param.setMaxValue(1.0E9);
-            param.setNumberEnum(NumberEnum.Time);
-            param.setOrder(Order.One);
-            param.setValue(asListNumber(6.525E-6));
-            return param;
-        }
-    },
-
-    _width70("_width70") {
-        public Param build() {
-            ListNumberParam param = new ListNumberParam();
-            param.setName("_width70");
-            param.setDisplayedName("_width70");
-            param.setDescription("");
-            param.setGroup(EnumGroup.Emission);
-            param.setCategory(Category.Acquisition);
-            param.setUuid("fb6faffa-cea0-4cb6-89ac-8f00443ca650");
-            param.setMinValue(0.0);
-            param.setMaxValue(1.0E9);
-            param.setNumberEnum(NumberEnum.Time);
-            param.setOrder(Order.One);
-            param.setValue(asListNumber(3.9135E-5));
-            return param;
-        }
-    },
-
-    _width71("_width71") {
-        public Param build() {
-            ListNumberParam param = new ListNumberParam();
-            param.setName("_width71");
-            param.setDisplayedName("_width71");
-            param.setDescription("");
-            param.setGroup(EnumGroup.Emission);
-            param.setCategory(Category.Acquisition);
-            param.setUuid("07ffe08e-4621-4b21-a2ee-db8bf6121fd5");
-            param.setMinValue(0.0);
-            param.setMaxValue(1.0E9);
-            param.setNumberEnum(NumberEnum.Time);
-            param.setOrder(Order.One);
-            param.setValue(asListNumber(1.305E-5));
-            return param;
-        }
-    },
-
-    _width72("_width72") {
-        public Param build() {
-            ListNumberParam param = new ListNumberParam();
-            param.setName("_width72");
-            param.setDisplayedName("_width72");
-            param.setDescription("");
-            param.setGroup(EnumGroup.Emission);
-            param.setCategory(Category.Acquisition);
-            param.setUuid("f0f8d872-ed18-4c17-bb5e-f97c06d6370e");
-            param.setMinValue(0.0);
-            param.setMaxValue(1.0E9);
-            param.setNumberEnum(NumberEnum.Time);
-            param.setOrder(Order.One);
-            param.setValue(asListNumber(2.609E-5));
-            return param;
-        }
-    },
-
-    _width73("_width73") {
-        public Param build() {
-            ListNumberParam param = new ListNumberParam();
-            param.setName("_width73");
-            param.setDisplayedName("_width73");
-            param.setDescription("");
-            param.setGroup(EnumGroup.Emission);
-            param.setCategory(Category.Acquisition);
-            param.setUuid("2b7c01e7-54a4-4d0c-b70a-b3699fa3f462");
-            param.setMinValue(0.0);
-            param.setMaxValue(1.0E9);
-            param.setNumberEnum(NumberEnum.Time);
-            param.setOrder(Order.One);
-            param.setValue(asListNumber(3.9135E-5));
-            return param;
-        }
-    },
-
-    p_amp("p_amp") {
-        public Param build() {
-            ListNumberParam param = new ListNumberParam();
-            param.setName("p_amp");
-            param.setDisplayedName("p_amp");
+            param.setName("r_amp");
+            param.setDisplayedName("r_amp");
             param.setDescription("");
             param.setLocked(true);
             param.setCategory(Category.Acquisition);
-            param.setUuid("f7f7ddbe-8d98-425d-8a16-00b9d8b910b6");
+            param.setUuid("1a485d7f-40e7-420b-add4-221145a797e5");
             param.setMinValue(0.0);
             param.setMaxValue(100.0);
             param.setNumberEnum(NumberEnum.TxAmp);
             param.setOrder(Order.One);
-            param.setValue(asListNumber(10.0));
+            param.setValue(asListNumber(0.0));
             return param;
         }
     },
 
-    p_angle("p_angle") {
+    r_angle("r_angle") {
         public Param build() {
             ListNumberParam param = new ListNumberParam();
-            param.setName("p_angle");
-            param.setDisplayedName("p_angle");
+            param.setName("r_angle");
+            param.setDisplayedName("r_angle");
             param.setLocked(true);
             param.setCategory(Category.Acquisition);
-            param.setUuid("5e11e824-124e-48f4-8e9a-5088c28579d4");
+            param.setUuid("3785a6c2-ad30-4c94-96a0-7e73dc7a783e");
             param.setMinValue(0.0);
             param.setMaxValue(1.7976931348623157E308);
             param.setNumberEnum(NumberEnum.PulseAngle);
@@ -1479,15 +1337,15 @@ public enum U implements GeneratorParamEnum {
         }
     },
 
-    p_att("p_att") {
+    r_att("r_att") {
         public Param build() {
             ListNumberParam param = new ListNumberParam();
-            param.setName("p_att");
-            param.setDisplayedName("p_att");
+            param.setName("r_att");
+            param.setDisplayedName("r_att");
             param.setDescription("");
             param.setLocked(true);
             param.setCategory(Category.Acquisition);
-            param.setUuid("6138e67d-d592-4172-aa97-393874c5364a");
+            param.setUuid("700f59c1-c0c7-4ac4-8166-129a0dc84050");
             param.setMinValue(0.0);
             param.setMaxValue(63.0);
             param.setNumberEnum(NumberEnum.TxAtt);
@@ -1497,39 +1355,21 @@ public enum U implements GeneratorParamEnum {
         }
     },
 
-    p_width("p_width") {
+    r_width("r_width") {
         public Param build() {
             ListNumberParam param = new ListNumberParam();
-            param.setName("p_width");
-            param.setDisplayedName("p_width");
-            param.setDescription("");
-            param.setGroup(EnumGroup.Emission);
-            param.setCategory(Category.Acquisition);
-            param.setUuid("2e5ad89a-9fb6-466c-b7af-410045b35bcc");
-            param.setMinValue(0.0);
-            param.setMaxValue(1.0E9);
-            param.setNumberEnum(NumberEnum.Time);
-            param.setOrder(Order.One);
-            param.setValue(asListNumber(1.305E-5));
-            return param;
-        }
-    },
-
-    p_width2("p_width2") {
-        public Param build() {
-            ListNumberParam param = new ListNumberParam();
-            param.setName("p_width2");
-            param.setDisplayedName("p_width2");
+            param.setName("r_width");
+            param.setDisplayedName("r_width");
             param.setDescription("");
             param.setLocked(true);
             param.setGroup(EnumGroup.Emission);
             param.setCategory(Category.Acquisition);
-            param.setUuid("47f993ef-0c98-48f9-a3ef-d07d9c08b7c1");
+            param.setUuid("1c5228df-fd26-4185-b11e-79c02ff10a37");
             param.setMinValue(0.0);
             param.setMaxValue(1.0E9);
             param.setNumberEnum(NumberEnum.Time);
             param.setOrder(Order.One);
-            param.setValue(asListNumber(9.999999999999999E-6));
+            param.setValue(asListNumber(4.9999999999999996E-6));
             return param;
         }
     };

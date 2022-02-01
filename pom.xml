@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>rs2d-sequence</groupId>
   <artifactId>test-simple</artifactId>
-  <version>2</version>
+  <version>3</version>
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
@@ -39,8 +39,8 @@
               <RS2D-Sequence-Name>test_simple</RS2D-Sequence-Name>
               <RS2D-Sequence-File>TestSimple.sxml</RS2D-Sequence-File>
               <RS2D-Sequence-Generator>rs2d.sequence.TestSimple</RS2D-Sequence-Generator>
-              <RS2D-Spinlab-Version>[14/12/2021 14:50]</RS2D-Spinlab-Version>
-              <RS2D-Compiler-Version>1703-2021.09-NEXT</RS2D-Compiler-Version>
+              <RS2D-Spinlab-Version>[01/02/2022 12:55]</RS2D-Spinlab-Version>
+              <RS2D-Compiler-Version>1708-2021.12-NEXT</RS2D-Compiler-Version>
               <RS2D-Java-Version>11.0.1+13 (OpenJDK Runtime Environment)</RS2D-Java-Version>
             </manifestEntries>
           </archive>

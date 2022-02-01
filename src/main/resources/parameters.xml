@@ -5,7 +5,7 @@
             <key>ACCU_DIM</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>ACCU_DIM</name>
-                <uuid>d6a582b7-561c-4af7-adc6-ddace1771673</uuid>
+                <uuid>af6eb813-ea10-414b-94f3-7eb24389f372</uuid>
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <description>Dimension on which averaging is performed by the Cameleon</description>
@@ -24,7 +24,7 @@
             <key>ACQUISITION_MATRIX_DIMENSION_1D</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>ACQUISITION_MATRIX_DIMENSION_1D</name>
-                <uuid>de23b72f-5898-49d4-848d-a5ce3e2f1295</uuid>
+                <uuid>3b9bbf8e-fb9f-4db8-a6ff-b7444cd49c61</uuid>
                 <value>128</value>
                 <defaultValue>128</defaultValue>
                 <description>Size of the initial dataset (raw data; ACQUISITION_MATRIX_DIMENSION_1D)</description>
@@ -43,7 +43,7 @@
             <key>ACQUISITION_MATRIX_DIMENSION_2D</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>ACQUISITION_MATRIX_DIMENSION_2D</name>
-                <uuid>62dec9a9-5d31-426d-8248-7135f396c146</uuid>
+                <uuid>c0486751-d6e7-468f-a525-473d62e42f56</uuid>
                 <value>1</value>
                 <defaultValue>128</defaultValue>
                 <description>Size of the initial dataset (raw data; ACQUISITION_MATRIX_DIMENSION_2D)</description>
@@ -62,7 +62,7 @@
             <key>ACQUISITION_MATRIX_DIMENSION_3D</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>ACQUISITION_MATRIX_DIMENSION_3D</name>
-                <uuid>69317341-5eb7-4652-8393-fb439f94270c</uuid>
+                <uuid>e5d4c8c7-0c18-4743-9331-3300db9fab66</uuid>
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <description>Size of the initial dataset (raw data; ACQUISITION_MATRIX_DIMENSION_3D)</description>
@@ -81,7 +81,7 @@
             <key>ACQUISITION_MATRIX_DIMENSION_4D</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>ACQUISITION_MATRIX_DIMENSION_4D</name>
-                <uuid>a4e53c1d-5a1d-4795-b2eb-6201ef0fb9e4</uuid>
+                <uuid>15cf1259-5a93-4568-aef0-e8c6ec4dc914</uuid>
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <description>Size of the initial dataset (raw data; ACQUISITION_MATRIX_DIMENSION_4D)</description>
@@ -100,7 +100,7 @@
             <key>ACQUISITION_MODE</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listTextParam">
                 <name>ACQUISITION_MODE</name>
-                <uuid>33ce82c2-ccf9-4634-bcee-62ae4cf86179</uuid>
+                <uuid>3e5d02ae-5a98-4e6b-beab-0b3a19ff2825</uuid>
                 <value>COMPLEX</value>
                 <value>REAL</value>
                 <value>REAL</value>
@@ -121,7 +121,7 @@
             <key>ACQUISITION_TIME_PER_SCAN</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>ACQUISITION_TIME_PER_SCAN</name>
-                <uuid>fac4927f-d653-4332-a413-752c93a1ae24</uuid>
+                <uuid>670b3a6d-a4f2-49f1-9c12-106be741d137</uuid>
                 <value>1.0</value>
                 <defaultValue>1.0</defaultValue>
                 <description>Sampling time duration, ADC time</description>
@@ -137,10 +137,29 @@
             </value>
         </entry>
         <entry>
+            <key>Async_90_width</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Async_90_width</name>
+                <uuid>018aa84c-c7ef-486e-a3fc-587d4e9d6521</uuid>
+                <value>4.9999999999999996E-6</value>
+                <defaultValue>0.0</defaultValue>
+                <description></description>
+                <displayedName>Specific 90° width</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <group>Emission</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
             <key>BASE_FREQ_1</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>BASE_FREQ_1</name>
-                <uuid>7dd550c9-6627-42c0-88b5-cdf9bad8fa1d</uuid>
+                <uuid>f0ef9625-a663-474a-b3b3-9c8784a84c51</uuid>
                 <value>4.0011610519686484E8</value>
                 <defaultValue>4.001170935E8</defaultValue>
                 <description>Base frequency of the first sequence channel</description>
@@ -159,7 +178,7 @@
             <key>BASE_FREQ_2</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>BASE_FREQ_2</name>
-                <uuid>9f46a86f-d1af-4c56-bc78-87eef14cf0c9</uuid>
+                <uuid>3b242283-c4dd-43c7-bbcd-824e12526299</uuid>
                 <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Base frequency of the second sequence channel</description>
@@ -178,7 +197,7 @@
             <key>BASE_FREQ_3</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>BASE_FREQ_3</name>
-                <uuid>2436ca74-ddc0-4231-a4f5-d8573eb5dacd</uuid>
+                <uuid>b1b6fe4e-7684-4206-98cb-84b2600d5104</uuid>
                 <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Base frequency of the third sequence channel</description>
@@ -197,7 +216,7 @@
             <key>BASE_FREQ_4</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>BASE_FREQ_4</name>
-                <uuid>3812ba82-ac62-467c-86a1-e1f9d08d21dd</uuid>
+                <uuid>02340b1b-db11-4103-9b90-2c93bb81480e</uuid>
                 <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Base frequency of the fourth sequence channel</description>
@@ -216,7 +235,7 @@
             <key>DATA_REPRESENTATION</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listTextParam">
                 <name>DATA_REPRESENTATION</name>
-                <uuid>c2b13fc5-a3e1-4a3f-8802-7d4dd9e4ede9</uuid>
+                <uuid>e307e8ef-2e0c-4f24-bf9d-707d41f8dd58</uuid>
                 <value>COMPLEX</value>
                 <value>REAL</value>
                 <value>REAL</value>
@@ -237,7 +256,7 @@
             <key>DIGITAL_FILTER_REMOVED</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
                 <name>DIGITAL_FILTER_REMOVED</name>
-                <uuid>32b80999-61d9-4187-b1e4-bd6a8f33a866</uuid>
+                <uuid>14b0c743-869e-4623-931d-e1f3b6e76d68</uuid>
                 <value>true</value>
                 <defaultValue>true</defaultValue>
                 <description>Data shift activated: true</description>
@@ -252,7 +271,7 @@
             <key>DIGITAL_FILTER_SHIFT</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>DIGITAL_FILTER_SHIFT</name>
-                <uuid>7f838b3d-4b22-4446-b152-4776f743f411</uuid>
+                <uuid>4a9241f6-31f1-4d38-bd9e-06bcdd33b45a</uuid>
                 <value>18</value>
                 <defaultValue>18</defaultValue>
                 <description>Data shift due to the digital filter</description>
@@ -271,7 +290,7 @@
             <key>DUMMY_SCAN</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>DUMMY_SCAN</name>
-                <uuid>09bd431f-cb48-4fd7-bfb7-06737aaf2de4</uuid>
+                <uuid>c69f052a-4e91-4f49-bb13-b56fa1250f62</uuid>
                 <value>0</value>
                 <defaultValue>0</defaultValue>
                 <description>Dummy Scan performed at the beginning of the acquisition</description>
@@ -290,7 +309,7 @@
             <key>DWELL_TIME</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>DWELL_TIME</name>
-                <uuid>71951c53-c5e7-4e7c-988b-853a99b65f8c</uuid>
+                <uuid>f63eb562-aed3-4684-a428-9b134ad1e385</uuid>
                 <value>8.0E-5</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Reception dwell time</description>
@@ -309,7 +328,7 @@
             <key>FID_RES</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>FID_RES</name>
-                <uuid>902e4f33-d731-4cf9-b33c-274471ffa95c</uuid>
+                <uuid>a849ba6c-fd23-49a1-8779-63161f18b61c</uuid>
                 <value>97.656</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Resolution of FID</description>
@@ -328,7 +347,7 @@
             <key>FID_RES_2D</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>FID_RES_2D</name>
-                <uuid>f405ee21-9e97-46ba-89ed-611a72a403d7</uuid>
+                <uuid>6df76c57-da75-44fe-ac67-7abc8dd52e22</uuid>
                 <value>12500.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Resolution of FID 2D</description>
@@ -347,7 +366,7 @@
             <key>INTERMEDIATE_FREQUENCY</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>INTERMEDIATE_FREQUENCY</name>
-                <uuid>51cec751-e738-4eb7-b267-3995848e0abc</uuid>
+                <uuid>e10a3c19-0525-4684-bf06-00b480637681</uuid>
                 <value>1.26E7</value>
                 <defaultValue>1.0</defaultValue>
                 <description>Sampling frequency after demodulation</description>
@@ -366,7 +385,7 @@
             <key>LAST_PUT</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
                 <name>LAST_PUT</name>
-                <uuid>3dca1a19-e232-4374-bd48-8f64b2d47d2e</uuid>
+                <uuid>63990f3e-36b3-4271-825e-3f90ba7d871f</uuid>
                 <value>0</value>
                 <value>0</value>
                 <value>0</value>
@@ -392,7 +411,7 @@
             <key>LOCK</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
                 <name>LOCK</name>
-                <uuid>8173dfd7-f65e-4d45-a585-1ee7379349e0</uuid>
+                <uuid>1d470fc0-2df1-4f9f-9873-11929fdeb0b4</uuid>
                 <value>false</value>
                 <defaultValue>false</defaultValue>
                 <description>Acquisition lock status</description>
@@ -406,7 +425,7 @@
             <key>MAGNETIC_FIELD_STRENGTH</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>MAGNETIC_FIELD_STRENGTH</name>
-                <uuid>20b0dcb3-b66a-4b6a-8345-8f52d81a46b8</uuid>
+                <uuid>1a17241b-1a9b-4a65-be1a-117942e073df</uuid>
                 <value>5</value>
                 <defaultValue>7</defaultValue>
                 <description>Magnetic field strength</description>
@@ -425,7 +444,7 @@
             <key>MANUFACTURER</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>MANUFACTURER</name>
-                <uuid>60dffb90-8e34-41c9-b650-d151ba00f7a6</uuid>
+                <uuid>b98595c2-3e43-41ee-8b4d-d94f607f4d55</uuid>
                 <value>RS2D</value>
                 <defaultValue>RS2D</defaultValue>
                 <description>Manufacturer</description>
@@ -441,7 +460,7 @@
             <key>MODALITY</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>MODALITY</name>
-                <uuid>f1e8dc1b-1f1b-4832-aa22-6b861ffdfe7e</uuid>
+                <uuid>f17ac2a9-9a3b-4c85-9ad2-a7772c04380f</uuid>
                 <value>NMR</value>
                 <defaultValue>NMR</defaultValue>
                 <description>Acquisition modality: MRI, NMR...</description>
@@ -461,7 +480,7 @@
             <key>MODEL_NAME</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>MODEL_NAME</name>
-                <uuid>71176efa-5e9e-444d-ad29-830e883caab9</uuid>
+                <uuid>76a3ccbb-4bdd-4b2e-840a-eef0807f539d</uuid>
                 <value></value>
                 <defaultValue></defaultValue>
                 <description>Model name</description>
@@ -477,7 +496,7 @@
             <key>NUCLEUS_1</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>NUCLEUS_1</name>
-                <uuid>1b4031c5-c8c2-4285-85fb-f636af23add1</uuid>
+                <uuid>f9f0a41e-8ac1-4512-9e00-c7b78450b9eb</uuid>
                 <value>1H</value>
                 <defaultValue>1H</defaultValue>
                 <description>Nucleus used for the first sequence channel</description>
@@ -616,7 +635,7 @@
             <key>NUCLEUS_2</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>NUCLEUS_2</name>
-                <uuid>85a37bb8-9bdd-4008-866a-5e66ef5659ef</uuid>
+                <uuid>0a7b6a77-7670-4c00-a5c8-935497608772</uuid>
                 <value>1H</value>
                 <defaultValue>1H</defaultValue>
                 <description>Nucleus used for the second sequence channel</description>
@@ -755,7 +774,7 @@
             <key>NUCLEUS_3</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>NUCLEUS_3</name>
-                <uuid>8fa8929e-2ec8-4865-a9e2-1762b0e26572</uuid>
+                <uuid>d2743ab6-99bc-4a2b-8625-3fb496b38b8a</uuid>
                 <value>1H</value>
                 <defaultValue>1H</defaultValue>
                 <description>Nucleus used for the third sequence channel</description>
@@ -894,7 +913,7 @@
             <key>NUCLEUS_4</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>NUCLEUS_4</name>
-                <uuid>244be64f-67ed-4d1a-812d-6a9448a9a2a0</uuid>
+                <uuid>917e4623-c216-4886-b142-64b201d6aa01</uuid>
                 <value>1H</value>
                 <defaultValue>1H</defaultValue>
                 <description>Nucleus used for the fourth sequence channel</description>
@@ -1033,7 +1052,7 @@
             <key>NUMBER_OF_AVERAGES</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>NUMBER_OF_AVERAGES</name>
-                <uuid>fc7b377f-e0c8-473b-9b09-f1505cafe978</uuid>
+                <uuid>c2d47d1b-bec1-4b4f-a10e-973c9477fb52</uuid>
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <description>Number of average</description>
@@ -1052,7 +1071,7 @@
             <key>Nb_2d</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>Nb_2d</name>
-                <uuid>010ee8ad-0951-4e3f-9d6e-522ecd2c91d0</uuid>
+                <uuid>734763b7-96a3-425d-b619-2caec6116360</uuid>
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <displayedName>Nb_2d</displayedName>
@@ -1070,7 +1089,7 @@
             <key>Nb_3d</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>Nb_3d</name>
-                <uuid>1fc6d7ee-16ee-43e5-91f3-e69bf89bee58</uuid>
+                <uuid>33033964-2009-4f7f-95b4-39dd8b44552f</uuid>
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <displayedName>Nb_3d</displayedName>
@@ -1088,7 +1107,7 @@
             <key>Nb_4d</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>Nb_4d</name>
-                <uuid>44c258fb-f8b2-4c8d-a5b3-91577ede67d9</uuid>
+                <uuid>4f3b455c-006e-44d3-b7a1-beeff3704019</uuid>
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <displayedName>Nb_4d</displayedName>
@@ -1106,7 +1125,7 @@
             <key>OBSERVED_FREQUENCY</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>OBSERVED_FREQUENCY</name>
-                <uuid>f53e22e3-f827-448e-9b97-87ec73019a9e</uuid>
+                <uuid>189cd3b0-e524-49fd-922d-8e73a95170c9</uuid>
                 <value>4.0011610519686484E8</value>
                 <defaultValue>6.3E7</defaultValue>
                 <description>Frequency of the acquisition</description>
@@ -1125,7 +1144,7 @@
             <key>OBSERVED_NUCLEUS</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>OBSERVED_NUCLEUS</name>
-                <uuid>40433781-bd82-4ba6-be4e-c878617e0376</uuid>
+                <uuid>0ffc9cb5-ba62-418c-9ebc-06f0353cb5ad</uuid>
                 <value>1H</value>
                 <defaultValue>1H</defaultValue>
                 <description>Observed nucleus</description>
@@ -1264,7 +1283,7 @@
             <key>OFFSET_FREQ_1</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="hzPpmNumberParam">
                 <name>OFFSET_FREQ_1</name>
-                <uuid>6f698774-e5a3-400c-a3ba-5f1fe9a8e3ba</uuid>
+                <uuid>9f5dde6b-abc6-4061-9ca6-4e5e60b94184</uuid>
                 <value>0.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Offset frequency of the first sequence channel</description>
@@ -1277,7 +1296,7 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Emission</group>
                 <category>Acquisition</category>
-                <uuidBaseFrequency>7dd550c9-6627-42c0-88b5-cdf9bad8fa1d</uuidBaseFrequency>
+                <uuidBaseFrequency>f0ef9625-a663-474a-b3b3-9c8784a84c51</uuidBaseFrequency>
                 <initialNumberEnum>FrequencyOffset</initialNumberEnum>
             </value>
         </entry>
@@ -1285,7 +1304,7 @@
             <key>OFFSET_FREQ_2</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="hzPpmNumberParam">
                 <name>OFFSET_FREQ_2</name>
-                <uuid>81c3dd52-0713-40ca-b8e8-732c4b09f10e</uuid>
+                <uuid>4c520aaa-9dca-42bf-9e9d-adffda208662</uuid>
                 <value>0.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Offset frequency of the second sequence channel</description>
@@ -1298,7 +1317,7 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Emission</group>
                 <category>Acquisition</category>
-                <uuidBaseFrequency>9f46a86f-d1af-4c56-bc78-87eef14cf0c9</uuidBaseFrequency>
+                <uuidBaseFrequency>3b242283-c4dd-43c7-bbcd-824e12526299</uuidBaseFrequency>
                 <initialNumberEnum>FrequencyOffset</initialNumberEnum>
             </value>
         </entry>
@@ -1306,7 +1325,7 @@
             <key>OFFSET_FREQ_3</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="hzPpmNumberParam">
                 <name>OFFSET_FREQ_3</name>
-                <uuid>c91a2987-5ad3-49cb-a421-82c721151940</uuid>
+                <uuid>383bde66-77a0-4d9f-b8c7-7d9f566efa7f</uuid>
                 <value>0.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Offset frequency of the third sequence channel</description>
@@ -1319,7 +1338,7 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Emission</group>
                 <category>Acquisition</category>
-                <uuidBaseFrequency>2436ca74-ddc0-4231-a4f5-d8573eb5dacd</uuidBaseFrequency>
+                <uuidBaseFrequency>b1b6fe4e-7684-4206-98cb-84b2600d5104</uuidBaseFrequency>
                 <initialNumberEnum>FrequencyOffset</initialNumberEnum>
             </value>
         </entry>
@@ -1327,7 +1346,7 @@
             <key>OFFSET_FREQ_4</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="hzPpmNumberParam">
                 <name>OFFSET_FREQ_4</name>
-                <uuid>b0435c86-0766-48fa-b9ee-0a6a3bec781e</uuid>
+                <uuid>775b66e5-4ae4-4d3c-a8e0-bb607c65ae64</uuid>
                 <value>0.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Offset frequency of the fourth sequence channel</description>
@@ -1340,69 +1359,15 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Emission</group>
                 <category>Acquisition</category>
-                <uuidBaseFrequency>3812ba82-ac62-467c-86a1-e1f9d08d21dd</uuidBaseFrequency>
+                <uuidBaseFrequency>02340b1b-db11-4103-9b90-2c93bb81480e</uuidBaseFrequency>
                 <initialNumberEnum>FrequencyOffset</initialNumberEnum>
-            </value>
-        </entry>
-        <entry>
-            <key>P2_width</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>P2_width</name>
-                <uuid>4b470191-308b-447d-96c0-810509226069</uuid>
-                <value>9.999999999999999E-6</value>
-                <description></description>
-                <displayedName>P2_width</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <order>One</order>
-                <group>Emission</group>
-                <category>Acquisition</category>
-            </value>
-        </entry>
-        <entry>
-            <key>P3_width</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>P3_width</name>
-                <uuid>b3a872a1-35b1-4aeb-94da-c4fb35de17ad</uuid>
-                <value>9.999999999999999E-6</value>
-                <description></description>
-                <displayedName>P3_width</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <order>One</order>
-                <group>Emission</group>
-                <category>Acquisition</category>
-            </value>
-        </entry>
-        <entry>
-            <key>P4_width</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>P4_width</name>
-                <uuid>4cc1e78f-fd42-48d5-8ba5-d828c0a80f4d</uuid>
-                <value>9.999999999999999E-6</value>
-                <description></description>
-                <displayedName>P4_width</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <order>One</order>
-                <group>Emission</group>
-                <category>Acquisition</category>
             </value>
         </entry>
         <entry>
             <key>PAROPT_PARAM</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>PAROPT_PARAM</name>
-                <uuid>6e11adeb-c306-4039-a652-61d418f91fcb</uuid>
+                <uuid>2ee1475e-585c-47ba-97e6-c3e8c48edac3</uuid>
                 <value>PULSE_LENGTH</value>
                 <defaultValue>PULSE_LENGTH</defaultValue>
                 <description>Name of the current optimised parameter</description>
@@ -1418,7 +1383,7 @@
             <key>PHASE_0</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
                 <name>PHASE_0</name>
-                <uuid>14148d91-8a9d-4cc7-9c67-0ddd33a05fc2</uuid>
+                <uuid>ab693451-a49f-4eff-b8dc-d5c1b27244f0</uuid>
                 <value>0.0</value>
                 <value>0.0</value>
                 <value>0.0</value>
@@ -1442,7 +1407,7 @@
             <key>PHASE_1</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
                 <name>PHASE_1</name>
-                <uuid>fb42d88a-e481-4273-9d14-95622447db18</uuid>
+                <uuid>2305e65f-fa4f-4d71-9bdc-79d7047a2dfd</uuid>
                 <value>0.0</value>
                 <value>0.0</value>
                 <value>0.0</value>
@@ -1466,7 +1431,7 @@
             <key>PHASE_APPLIED</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
                 <name>PHASE_APPLIED</name>
-                <uuid>49d8f88f-ada2-47f6-bf19-e6c7836d8976</uuid>
+                <uuid>353cb6c8-ecdc-4a5b-8ebe-49e83335b3d7</uuid>
                 <value>false</value>
                 <defaultValue>false</defaultValue>
                 <description>PHASE_APPLIED</description>
@@ -1481,7 +1446,7 @@
             <key>PHASE_MOD</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listTextParam">
                 <name>PHASE_MOD</name>
-                <uuid>b84cd04f-19f4-4ca5-b0bb-f8f3bd4c51ad</uuid>
+                <uuid>7eb28d62-86e7-40b3-85cd-074d7555e0aa</uuid>
                 <value>NONE</value>
                 <value>NONE</value>
                 <value>NONE</value>
@@ -1509,7 +1474,7 @@
             <key>PROBES</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listTextParam">
                 <name>PROBES</name>
-                <uuid>119a7cac-812d-4b45-ab10-fb8b6a27e8e2</uuid>
+                <uuid>a5437132-bb57-49d4-87a0-03fbf8062f72</uuid>
                 <description>The probes used for the acquisition.</description>
                 <displayedName>INSTRUMENT_PROBES</displayedName>
                 <locked>true</locked>
@@ -1520,10 +1485,28 @@
             </value>
         </entry>
         <entry>
+            <key>PatternDuration</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>PatternDuration</name>
+                <uuid>f2e6878b-b4c7-4d83-a329-d11dfed4735f</uuid>
+                <value>1.9999999999999998E-5</value>
+                <defaultValue>0.0</defaultValue>
+                <displayedName>PatternDuration</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Time</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E9</maxValue>
+                <group>User</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
             <key>Pre_scan</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>Pre_scan</name>
-                <uuid>c2f23bbd-bbbe-413f-b37a-18079af2f265</uuid>
+                <uuid>20389f1e-bd82-4a68-b854-ebefa8be8321</uuid>
                 <value>0</value>
                 <defaultValue>0</defaultValue>
                 <description>PreScan</description>
@@ -1542,7 +1525,7 @@
             <key>RECEIVER_COUNT</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>RECEIVER_COUNT</name>
-                <uuid>c5382703-9ad2-435e-9c18-e73e5805dcfd</uuid>
+                <uuid>8d2be2b7-c84b-426d-9803-185ed169518d</uuid>
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <description>Number of receivers channel</description>
@@ -1561,7 +1544,7 @@
             <key>RECEIVER_GAIN</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
                 <name>RECEIVER_GAIN</name>
-                <uuid>cc235194-1e6f-4f89-a5bf-80ee24f020d3</uuid>
+                <uuid>bacd66ae-f756-4147-a813-f1052b1d05b8</uuid>
                 <value>30.0</value>
                 <defaultValue>30.0</defaultValue>
                 <description>Receiver gain</description>
@@ -1579,7 +1562,7 @@
             <key>SAMPLE_TEMPERATURE</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>SAMPLE_TEMPERATURE</name>
-                <uuid>dba28ca3-3b7f-400e-9ad0-4c18ca8caa57</uuid>
+                <uuid>5443a857-be6b-4019-b09b-393071070005</uuid>
                 <value>0.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>SAMPLE_TEMPERATURE.description</description>
@@ -1598,7 +1581,7 @@
             <key>SEQUENCE_NAME</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>SEQUENCE_NAME</name>
-                <uuid>7a88b1c6-96f3-4919-833b-e88d662d72bc</uuid>
+                <uuid>db0e13df-c47b-4715-9620-891afcb0a2ea</uuid>
                 <value>test_simple</value>
                 <defaultValue>test_simple</defaultValue>
                 <description>Name of the sequence</description>
@@ -1614,7 +1597,7 @@
             <key>SETUP_MODE</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
                 <name>SETUP_MODE</name>
-                <uuid>4c66b75c-4b17-4f1b-a972-3ef46f38f16f</uuid>
+                <uuid>f37da408-7c16-4f9e-82cc-203ebdc01d10</uuid>
                 <value>false</value>
                 <defaultValue>false</defaultValue>
                 <description>True during setup process</description>
@@ -1629,7 +1612,7 @@
             <key>SOFTWARE_VERSION</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>SOFTWARE_VERSION</name>
-                <uuid>efbdb94f-6310-407d-9e29-c6f81df18904</uuid>
+                <uuid>dd3cde21-ba3b-4e87-8272-028fb45d76fd</uuid>
                 <value></value>
                 <defaultValue></defaultValue>
                 <description>Version of the software</description>
@@ -1645,7 +1628,7 @@
             <key>SOLVENT</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>SOLVENT</name>
-                <uuid>c3cf0e92-b39c-4289-8f91-0d45afdf2655</uuid>
+                <uuid>6813f2d9-a659-49ab-9c07-9a902e142bd3</uuid>
                 <value>CDCl3</value>
                 <defaultValue>CDCl3</defaultValue>
                 <description>Solvent used</description>
@@ -1661,7 +1644,7 @@
             <key>SPECTRAL_WIDTH</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="hzPpmNumberParam">
                 <name>SPECTRAL_WIDTH</name>
-                <uuid>9ca5227a-b1ea-4069-a5ee-dbd02237df34</uuid>
+                <uuid>6db216d8-2565-4d81-89af-6907244e4c24</uuid>
                 <value>12500.0</value>
                 <defaultValue>12500.0</defaultValue>
                 <description>Reception bandwidth</description>
@@ -1674,7 +1657,7 @@
                 <maxValue>1.0E8</maxValue>
                 <group>Reception</group>
                 <category>Acquisition</category>
-                <uuidBaseFrequency>f53e22e3-f827-448e-9b97-87ec73019a9e</uuidBaseFrequency>
+                <uuidBaseFrequency>189cd3b0-e524-49fd-922d-8e73a95170c9</uuidBaseFrequency>
                 <initialNumberEnum>SW</initialNumberEnum>
             </value>
         </entry>
@@ -1682,7 +1665,7 @@
             <key>SPECTRAL_WIDTH_2D</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="hzPpmNumberParam">
                 <name>SPECTRAL_WIDTH_2D</name>
-                <uuid>8d027767-a22d-41f2-8518-2d1278ee4c2e</uuid>
+                <uuid>aa800133-fa32-4b59-93f2-8e33053c7ce9</uuid>
                 <value>12500.0</value>
                 <defaultValue>12500.0</defaultValue>
                 <description>Spectral width in the second dimension</description>
@@ -1695,7 +1678,28 @@
                 <maxValue>1.0E8</maxValue>
                 <group>Reception</group>
                 <category>Acquisition</category>
-                <uuidBaseFrequency>480eb958-50e0-4840-8690-06a6508ad7e1</uuidBaseFrequency>
+                <uuidBaseFrequency>5ae208f3-2495-4ae7-a03b-d0ceb1e36a58</uuidBaseFrequency>
+                <initialNumberEnum>SW</initialNumberEnum>
+            </value>
+        </entry>
+        <entry>
+            <key>SPECTRAL_WIDTH_3D</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="hzPpmNumberParam">
+                <name>SPECTRAL_WIDTH_3D</name>
+                <uuid>5fab86a4-d9ef-4534-afde-620f773ee3b7</uuid>
+                <value>12500.0</value>
+                <defaultValue>12500.0</defaultValue>
+                <description>Spectral width in the third dimension</description>
+                <displayedName>SW 3D</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>SW</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>1.0E8</maxValue>
+                <group>Reception</group>
+                <category>Acquisition</category>
+                <uuidBaseFrequency>189cd3b0-e524-49fd-922d-8e73a95170c9</uuidBaseFrequency>
                 <initialNumberEnum>SW</initialNumberEnum>
             </value>
         </entry>
@@ -1703,7 +1707,7 @@
             <key>SPIN_RATE</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>SPIN_RATE</name>
-                <uuid>7528ed93-4606-4978-b2d2-5a0385633417</uuid>
+                <uuid>4fc1cf5f-b36c-49d1-8fae-4eb2f13ceec5</uuid>
                 <value>0</value>
                 <defaultValue>0</defaultValue>
                 <description>SPIN_RATE.description</description>
@@ -1722,7 +1726,7 @@
             <key>SR</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="hzPpmListNumberParam">
                 <name>SR</name>
-                <uuid>dfbf883c-fdc6-4bbc-a692-26035d5a6588</uuid>
+                <uuid>0757c6fb-3e1b-40a1-8076-8ce85ac9536a</uuid>
                 <value>0.0</value>
                 <value>0.0</value>
                 <value>0.0</value>
@@ -1740,7 +1744,7 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Reception</group>
                 <category>Acquisition</category>
-                <uuidBaseFrequency>f53e22e3-f827-448e-9b97-87ec73019a9e</uuidBaseFrequency>
+                <uuidBaseFrequency>189cd3b0-e524-49fd-922d-8e73a95170c9</uuidBaseFrequency>
                 <initialNumberEnum>FrequencyOffset</initialNumberEnum>
             </value>
         </entry>
@@ -1748,7 +1752,7 @@
             <key>STATION_NAME</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>STATION_NAME</name>
-                <uuid>f284f48c-aa98-4169-a23e-f08053e8212e</uuid>
+                <uuid>41652196-9081-45a5-9672-bf51599cd3ef</uuid>
                 <value></value>
                 <defaultValue></defaultValue>
                 <description>Station name</description>
@@ -1764,7 +1768,7 @@
             <key>TRANSFORM_PLUGIN</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>TRANSFORM_PLUGIN</name>
-                <uuid>68164ee9-89ed-47f6-a089-08b845f4ad20</uuid>
+                <uuid>13f01547-0a9a-44f5-9660-f19121d56fa0</uuid>
                 <value>none</value>
                 <defaultValue>none</defaultValue>
                 <description>Plugin to reorder the sample into the dataset</description>
@@ -1796,7 +1800,7 @@
             <key>TRANSMIT_FREQ_1</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TRANSMIT_FREQ_1</name>
-                <uuid>9ca5a455-0ae9-4079-aeca-600ef627708f</uuid>
+                <uuid>5dd79b47-f2c4-43c0-b42c-eedec51c6705</uuid>
                 <value>4.0011610519686484E8</value>
                 <defaultValue>4.001170935E8</defaultValue>
                 <description>Transmit frequency of the first sequence channel</description>
@@ -1815,7 +1819,7 @@
             <key>TRANSMIT_FREQ_2</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TRANSMIT_FREQ_2</name>
-                <uuid>480eb958-50e0-4840-8690-06a6508ad7e1</uuid>
+                <uuid>5ae208f3-2495-4ae7-a03b-d0ceb1e36a58</uuid>
                 <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Transmit frequency of the second sequence channel</description>
@@ -1834,7 +1838,7 @@
             <key>TRANSMIT_FREQ_3</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TRANSMIT_FREQ_3</name>
-                <uuid>0ccb14c3-5f7d-4db2-ac00-3b90a4415d9e</uuid>
+                <uuid>ca5a3a92-dde4-42b0-9c16-192cf7c4dedd</uuid>
                 <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Transmit frequency of the third sequence channel</description>
@@ -1853,7 +1857,7 @@
             <key>TRANSMIT_FREQ_4</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TRANSMIT_FREQ_4</name>
-                <uuid>514489f2-7de6-419a-a3f2-a9ab10a902ba</uuid>
+                <uuid>d5728057-2c9e-4904-a303-93b5c600b598</uuid>
                 <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Transmit frequency of the fourth sequence channel</description>
@@ -1872,7 +1876,7 @@
             <key>TX_ROUTE</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
                 <name>TX_ROUTE</name>
-                <uuid>1186192f-dce6-4bf5-9666-44b50191ebf0</uuid>
+                <uuid>0ecf1b0a-e626-48d3-a145-a23a20b664b6</uuid>
                 <value>0</value>
                 <description>LogCh-&gt;PhysCh</description>
                 <displayedName>TX_ROUTE</displayedName>
@@ -1889,8 +1893,8 @@
             <key>Tx_att</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>Tx_att</name>
-                <uuid>400eaaae-83ba-4a5c-91fb-27ae3aacc2a7</uuid>
-                <value>0.0</value>
+                <uuid>9ff52995-5cd9-42be-9207-373833fbc73d</uuid>
+                <value>30.0</value>
                 <defaultValue>30.0</defaultValue>
                 <displayedName>Tx_att</displayedName>
                 <locked>true</locked>
@@ -1906,7 +1910,7 @@
             <key>USER_MATRIX_DIMENSION_1D</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>USER_MATRIX_DIMENSION_1D</name>
-                <uuid>014c8d0a-01c1-4691-8936-8bf024df437b</uuid>
+                <uuid>a9a34a2b-ec59-43e9-a883-efcb26d52a61</uuid>
                 <value>128</value>
                 <defaultValue>128</defaultValue>
                 <description>Matrix size (USER_MATRIX_DIMENSION_1D)</description>
@@ -1925,7 +1929,7 @@
             <key>USER_MATRIX_DIMENSION_2D</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>USER_MATRIX_DIMENSION_2D</name>
-                <uuid>40513cc9-b685-42c5-b683-1188594f1772</uuid>
+                <uuid>01765a1b-3034-4b91-bcc4-7585bce2e8c2</uuid>
                 <value>128</value>
                 <defaultValue>128</defaultValue>
                 <description>Matrix size (USER_MATRIX_DIMENSION_2D)</description>
@@ -1944,7 +1948,7 @@
             <key>USER_MATRIX_DIMENSION_3D</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>USER_MATRIX_DIMENSION_3D</name>
-                <uuid>3264b4f6-7d48-4f00-8423-e2e086bd2c44</uuid>
+                <uuid>bf759e4b-2603-4711-8f23-4be746a0f8f8</uuid>
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <description>Matrix size (USER_MATRIX_DIMENSION_3D)</description>
@@ -1963,7 +1967,7 @@
             <key>USER_MATRIX_DIMENSION_4D</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>USER_MATRIX_DIMENSION_4D</name>
-                <uuid>9621435a-f869-4630-b5e7-460a25810ba3</uuid>
+                <uuid>6619c660-eec5-4bd6-bd85-20461c3a45b3</uuid>
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <description>Matrix size (USER_MATRIX_DIMENSION_4D)</description>
@@ -1979,157 +1983,13 @@
             </value>
         </entry>
         <entry>
-            <key>_width66</key>
+            <key>r_amp</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>_width66</name>
-                <uuid>ed362124-d39f-471b-86cd-07a1bec53aac</uuid>
-                <value>1.9574999999999998E-5</value>
+                <name>r_amp</name>
+                <uuid>1a485d7f-40e7-420b-add4-221145a797e5</uuid>
+                <value>0.0</value>
                 <description></description>
-                <displayedName>_width66</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <order>One</order>
-                <group>Emission</group>
-                <category>Acquisition</category>
-            </value>
-        </entry>
-        <entry>
-            <key>_width67</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>_width67</name>
-                <uuid>57576a10-d41e-4a3e-ab76-4e853b1a79ef</uuid>
-                <value>1.305E-5</value>
-                <description></description>
-                <displayedName>_width67</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <order>One</order>
-                <group>Emission</group>
-                <category>Acquisition</category>
-            </value>
-        </entry>
-        <entry>
-            <key>_width68</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>_width68</name>
-                <uuid>8aedc01b-d9e3-446f-92e3-f54090188404</uuid>
-                <value>2.609E-5</value>
-                <description></description>
-                <displayedName>_width68</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <order>One</order>
-                <group>Emission</group>
-                <category>Acquisition</category>
-            </value>
-        </entry>
-        <entry>
-            <key>_width69</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>_width69</name>
-                <uuid>d840354a-90cd-4cd9-9bc5-50690855f849</uuid>
-                <value>6.525E-6</value>
-                <description></description>
-                <displayedName>_width69</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <order>One</order>
-                <group>Emission</group>
-                <category>Acquisition</category>
-            </value>
-        </entry>
-        <entry>
-            <key>_width70</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>_width70</name>
-                <uuid>fb6faffa-cea0-4cb6-89ac-8f00443ca650</uuid>
-                <value>3.9135E-5</value>
-                <description></description>
-                <displayedName>_width70</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <order>One</order>
-                <group>Emission</group>
-                <category>Acquisition</category>
-            </value>
-        </entry>
-        <entry>
-            <key>_width71</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>_width71</name>
-                <uuid>07ffe08e-4621-4b21-a2ee-db8bf6121fd5</uuid>
-                <value>1.305E-5</value>
-                <description></description>
-                <displayedName>_width71</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <order>One</order>
-                <group>Emission</group>
-                <category>Acquisition</category>
-            </value>
-        </entry>
-        <entry>
-            <key>_width72</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>_width72</name>
-                <uuid>f0f8d872-ed18-4c17-bb5e-f97c06d6370e</uuid>
-                <value>2.609E-5</value>
-                <description></description>
-                <displayedName>_width72</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <order>One</order>
-                <group>Emission</group>
-                <category>Acquisition</category>
-            </value>
-        </entry>
-        <entry>
-            <key>_width73</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>_width73</name>
-                <uuid>2b7c01e7-54a4-4d0c-b70a-b3699fa3f462</uuid>
-                <value>3.9135E-5</value>
-                <description></description>
-                <displayedName>_width73</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <order>One</order>
-                <group>Emission</group>
-                <category>Acquisition</category>
-            </value>
-        </entry>
-        <entry>
-            <key>p_amp</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>p_amp</name>
-                <uuid>f7f7ddbe-8d98-425d-8a16-00b9d8b910b6</uuid>
-                <value>10.0</value>
-                <description></description>
-                <displayedName>p_amp</displayedName>
+                <displayedName>r_amp</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <numberEnum>TxAmp</numberEnum>
@@ -2140,13 +2000,13 @@
             </value>
         </entry>
         <entry>
-            <key>p_angle</key>
+            <key>r_angle</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>p_angle</name>
-                <uuid>5e11e824-124e-48f4-8e9a-5088c28579d4</uuid>
+                <name>r_angle</name>
+                <uuid>3785a6c2-ad30-4c94-96a0-7e73dc7a783e</uuid>
                 <value>90.0</value>
                 <defaultValue>90.0</defaultValue>
-                <displayedName>p_angle</displayedName>
+                <displayedName>r_angle</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <numberEnum>PulseAngle</numberEnum>
@@ -2156,13 +2016,13 @@
             </value>
         </entry>
         <entry>
-            <key>p_att</key>
+            <key>r_att</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>p_att</name>
-                <uuid>6138e67d-d592-4172-aa97-393874c5364a</uuid>
+                <name>r_att</name>
+                <uuid>700f59c1-c0c7-4ac4-8166-129a0dc84050</uuid>
                 <value>0.0</value>
                 <description></description>
-                <displayedName>p_att</displayedName>
+                <displayedName>r_att</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <numberEnum>TxAtt</numberEnum>
@@ -2173,31 +2033,13 @@
             </value>
         </entry>
         <entry>
-            <key>p_width</key>
+            <key>r_width</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>p_width</name>
-                <uuid>2e5ad89a-9fb6-466c-b7af-410045b35bcc</uuid>
-                <value>1.305E-5</value>
+                <name>r_width</name>
+                <uuid>1c5228df-fd26-4185-b11e-79c02ff10a37</uuid>
+                <value>4.9999999999999996E-6</value>
                 <description></description>
-                <displayedName>p_width</displayedName>
-                <locked>false</locked>
-                <lockedToDefault>false</lockedToDefault>
-                <numberEnum>Time</numberEnum>
-                <minValue>0.0</minValue>
-                <maxValue>1.0E9</maxValue>
-                <order>One</order>
-                <group>Emission</group>
-                <category>Acquisition</category>
-            </value>
-        </entry>
-        <entry>
-            <key>p_width2</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
-                <name>p_width2</name>
-                <uuid>47f993ef-0c98-48f9-a3ef-d07d9c08b7c1</uuid>
-                <value>9.999999999999999E-6</value>
-                <description></description>
-                <displayedName>p_width2</displayedName>
+                <displayedName>r_width</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <numberEnum>Time</numberEnum>
